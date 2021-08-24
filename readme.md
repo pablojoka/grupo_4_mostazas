@@ -2,7 +2,7 @@ E-commerce de "Mos Tazas"
 Productos a la venta: Tazas de cerámica sublimadas.
 Temática de las tazas: Series, Peliculas, Equipos de Futbol, dibujos infantiles, memes, Música y otros.
 Público Objetivo:
-
+El público objetivo es todo aquel que quiera adquiri una taza tematica. Desde gente que quiera colleccionar merch sobre algo en particular como aquel que quiere una taza que refleje un mensaje particular.
 
 Principales competencias:
 https://www.puntobizarro.com.ar/ (bootstrap)
