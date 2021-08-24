@@ -1,0 +1,96 @@
+*{
+    border: solid 1px red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: black;
+    width: 100%;
+    
+}
+
+#contenedor-header{
+
+}
+
+#logo-buscador-carrito{
+    height: 14vh;
+    margin-top: 10px;
+    background-color: rgb(49, 24, 24);
+
+}
+nav{
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 3px;
+    background-color: rgb(38, 122, 13);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#logo{
+    width: auto;
+    height: 70%;
+    display:block;
+    margin:auto;
+}
+#buscador{
+    width: 80%;
+    max-width: 300px;
+    display:block;
+    margin:auto;
+    height: 25%;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  li {
+    font-size: 25px;
+    margin: 0.75rem;
+    display: flex;
+  }
+
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    display: flex;
+}
+
+.img-producto{
+    width: 100%;
+    height: auto;
+}
+.taza-individual{
+    text-align: center;
+}
+
+#barra-extra{
+    text-align: center;
+}
+
+@media (min-width:480px) {
+    
+}
+
+@media (min-width:769px) {
+    
+}
+@media (min-width:1200px) {
+    
+}

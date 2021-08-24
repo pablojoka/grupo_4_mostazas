@@ -1,0 +1,19 @@
+{
+  "name": "mostazas",
+  "version": "1.0.0",
+  "description": "E-commerce de \"Mos Tazas\"\r Productos a la venta: Tazas de cerámica sublimadas.\r Temática de las tazas: Series, Peliculas, Equipos de Futbol, dibujos infantiles, memes, Música y otros.\r Público Objetivo:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablojoka/grupo_4_mostazas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablojoka/grupo_4_mostazas/issues"
+  },
+  "homepage": "https://github.com/pablojoka/grupo_4_mostazas#readme"
+}
