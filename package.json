@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pablojoka/grupo_4_mostazas/issues"
   },
-  "homepage": "https://github.com/pablojoka/grupo_4_mostazas#readme"
+  "homepage": "https://github.com/pablojoka/grupo_4_mostazas#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
