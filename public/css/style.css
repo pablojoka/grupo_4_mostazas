@@ -5,11 +5,9 @@
     padding: 0;
 }
 
-
 header{
     background-color: black;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 nav{
@@ -41,21 +39,23 @@ nav ul li:hover > ul {
     display:block;
    }
 
-#contenedor-header{
-
-}
-
 #logo-buscador-carrito{
     height: 14vh;
     margin-top: 10px;
-    
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 #menu-no-mobile{
     display: none;
 
 }
-
+#carrito{
+    width: auto;
+    height: 70%;
+    display:block;
+    margin:auto;
+}
 #logo{
     width: auto;
     height: 70%;
@@ -104,6 +104,17 @@ article{
 width: 100%;
 }
 
+.product-details{
+    width: 200vh;
+    height: auto;
+    text-align: left;
+} 
+#product-buttons{
+    text-align: center;
+    margin: auto;
+    max-inline-size: 100px;
+    
+}
 @media (min-width:480px) {
     #menu-no-mobile{
         display: none;
