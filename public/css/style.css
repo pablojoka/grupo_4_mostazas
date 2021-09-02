@@ -21,13 +21,13 @@ header{
     
 }
 #divlogo{
-    height: 14vh;
+    height: 10vh;
     margin-top: 10px;
     width: 100%;
 }
 #logo{
     width: auto;
-    height: 70%;
+    height: 100%;
     display:block;
     margin:auto;
 }
@@ -83,6 +83,8 @@ nav ul li{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #7be0ad;
+
 }
 
 nav ul ul{
@@ -246,6 +248,7 @@ FIN SECTION "BARRA EXTRA"
         margin: 0.75rem;
         display: flex;
         border: 0px;
+
     }
     
     .extra{
