@@ -3,14 +3,75 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*
 
+INICIO DEL HEADER
+
+*/
+#contenedor-header{
+    display: flex;
+    flex-wrap: wrap;
+}
 header{
     background-color: black;
     width: 100%;
     
 }
+#divlogo{
+    height: 14vh;
+    margin-top: 10px;
+    width: 100%;
+}
+#logo{
+    width: auto;
+    height: 70%;
+    display:block;
+    margin:auto;
+}
+#buscador{
+    width: 100%;
+    text-align: center;
+    display:block;
+    margin:auto;
+    height: 25%;
+    
+}
+
+
+#buscador{
+    width: 100%;
+    text-align: center;
+}
+
+
+#carrito-login{
+    width: 100%;
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+#carrito-login ul{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+text-align: center;
+
+}
+
+#carrito-login ul li{
+    
+    justify-content: center;
+    margin: auto;
+    width: 33%;
+    color: white;
+}
+
 
 nav{
     width: 100%;
@@ -41,43 +102,30 @@ nav ul li:hover > ul {
     display:block;
    }
 
-#contenedor-header{
+
+#menu-no-mobile{
+    display: none;
+}
+#menu-no-mobile > ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    list-style:none;
     display: flex;
     flex-wrap: wrap;
 }
 
-#divlogo{
-    height: 14vh;
-    margin-top: 10px;
-    width: 100%;
-}
+/*
 
-#buscador{
-    width: 100%;
-}
+FIN DEL HEADER
 
-#carrito-login{
-    width: 100%;
-}
+*/
 
-#menu-no-mobile{
-    display: none;
+/*
 
-}
+INICIO DEL SECTION "PRODUCTOS"
 
-#logo{
-    width: auto;
-    height: 70%;
-    display:block;
-    margin:auto;
-}
-#buscador{
-    width: 80%;
-    max-width: 300px;
-    display:block;
-    margin:auto;
-    height: 25%;
-}
+*/
 
 
 #productos{
@@ -87,6 +135,16 @@ nav ul li:hover > ul {
     margin: auto;
     
 }
+
+#titulo{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-left: 1vw;
+
+}
+
 article{
     display: flex;
     width: 390px;
@@ -94,14 +152,26 @@ article{
     margin: auto;
 }
 
-.img-producto{
-    width: 100%;
-    height: auto;
-}
 .taza-individual{
     text-align: center;
 }
 
+.img-producto{
+    width: 100%;
+    height: auto;
+}
+
+/*
+
+FIN DE SECION "PRODUCTOS"
+
+*/
+
+/*
+
+INICIO SECTION "BARRA EXTRA"
+
+*/
 #barra-extra{
     text-align: center;
     display: flex;
@@ -113,39 +183,23 @@ article{
 width: 100%;
 }
 
+/*
+
+FIN SECTION "BARRA EXTRA"
+
+*/
+
+
+
+
 @media (min-width:480px) {
-    #menu-no-mobile{
-        display: none;
-        color: #7be0ad;
-    }
+    
 }
 
+/*TABLET*/
 @media (min-width:769px) {
-    .extra{
-        width: 33%;
-        margin: auto;
-    }  
-    nav{
-        display: none;
-    }
-    #menu-no-mobile{
-        display: block;
-    }
-    #menu-no-mobile > ul {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        list-style:none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-      
-    nav ul li {
-        font-size: 25px;
-        margin: 0.75rem;
-        display: flex;
-        border: 0px;
-    }
+    
+    
     #divlogo{
         
         width: 33%;
@@ -157,29 +211,42 @@ width: 100%;
     
     #carrito-login{
         width: 33%;
-        list-style:none;
-        display: flex;
-        flex-wrap: wrap;
-        color: white;
+    }
+    #menu-no-mobile{
+        display: block;
+        color: #7be0ad;
     }
 
-#carrito-login ul{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    text-align: center;
-}
 
-    #carrito-login ul li{
-        
-        justify-content: center;
-        margin: auto;
-        width: 33%;
+    nav{
+        display: none;
     }
     
+      
+    nav ul li {
+        font-size: 25px;
+        margin: 0.75rem;
+        display: flex;
+        border: 0px;
+    }
+    
+    .extra{
+        width: 33%;
+        margin: auto;
+    } 
 }
+
+
+/*DESKTOP*/
 @media (min-width:1200px) {
+    
+    #contenedor-header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        margin: auto;
+    }
+
     #productos{
         display: flex;
         flex-wrap: wrap;
@@ -199,11 +266,6 @@ width: 100%;
 
     }
 
-    #contenedor-header{
-        display: flex;
-        flex-wrap: wrap;
-        width: 1200px;
-        margin: auto;
-    }
+    
     
 }
