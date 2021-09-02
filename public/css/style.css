@@ -44,130 +44,179 @@ nav ul li:hover > ul {
     margin-top: 10px;
     display: flex;
     flex-wrap: nowrap;
-
 }
-#menu-no-mobile{
-    display: none;
-
-}
-#carrito{
-    width: auto;
-    height: 70%;
-    display:block;
-    margin:auto;
-}
-#logo{
-    width: auto;
-    height: 70%;
-    display:block;
-    margin:auto;
-}
-#buscador{
-    width: 80%;
-    max-width: 300px;
-    display:block;
-    margin:auto;
-    height: 25%;
-}
-
-
-#productos{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
+#divlogo{
+        height: 14vh;
+        margin-top: 10px;
+        width: 100%;
+    }
     
-}
-article{
-    display: flex;
-    width: 390px;
-    padding: 1%;
-    margin: auto;
-}
-
-.img-producto{
-    width: 100%;
-    height: auto;
-}
-.taza-individual{
-    text-align: center;
-}
-
-#barra-extra{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #31AFD4;
-    color: white;
-}
-.extra{
-width: 100%;
-}
-
-.product-details{
-    width: 200vh;
-    height: auto;
-    text-align: left;
-} 
-#product-buttons{
-    text-align: center;
-    margin: auto;
-    max-inline-size: 100px;
+    #buscador{
+        width: 100%;
+    }
     
-}
-@media (min-width:480px) {
+    #carrito-login{
+        width: 100%;
+    }
+    
     #menu-no-mobile{
         display: none;
-        color: #7be0ad;
+        
     }
-}
-
-@media (min-width:769px) {
-    .extra{
-        width: 33%;
-        margin: auto;
-    }  
-    nav{
-        display: none;
+    #carrito{
+        width: auto;
+        height: 70%;
+        display:block;
+        margin:auto;
     }
-    #menu-no-mobile{
-        display: block;
+    #logo{
+        width: auto;
+        height: 70%;
+        display:block;
+        margin:auto;
     }
-    #menu-no-mobile > ul {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        list-style:none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-      
-    nav ul li {
-        font-size: 25px;
-        margin: 0.75rem;
-        display: flex;
-        border: 0px;
+    #buscador{
+        width: 80%;
+        max-width: 300px;
+        display:block;
+        margin:auto;
+        height: 25%;
     }
     
-}
-@media (min-width:1200px) {
+    
     #productos{
         display: flex;
         flex-wrap: wrap;
-        width: 1200px;
+        width: 100%;
         margin: auto;
         
     }
-    .extra{
-        width: 33%;
+    article{
+        display: flex;
+        width: 390px;
+        padding: 1%;
         margin: auto;
+    }
+    
+    .img-producto{
+        width: 100%;
+        height: auto;
+    }
+    .taza-individual{
+        text-align: center;
+    }
+    
+    #barra-extra{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #31AFD4;
+        color: white;
+    }
+    .extra{
+        width: 100%;
+    }
+    
+    .product-details{
+        width: 200vh;
+        height: auto;
+        text-align: left;
+    } 
+    #product-buttons{
+        text-align: center;
+        margin: auto;
+        max-inline-size: 100px;
+        
+    }
+    @media (min-width:480px) {
+        #menu-no-mobile{
+            display: none;
+            color: #7be0ad;
+        }
+    }
+    
+    @media (min-width:769px) {
+        .extra{
+            width: 33%;
+            margin: auto;
+        }  
+        nav{
+            display: none;
+        }
+        #menu-no-mobile{
+            display: block;
+        }
+        #menu-no-mobile > ul {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            list-style:none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            font-size: 25px;
+            margin: 0.75rem;
+            display: flex;
+            border: 0px;
+        }
+        #divlogo{
+            
+            width: 33%;
+        }
+        
+        #buscador{
+            width: 33%;
+        }
+        
+        #carrito-login{
+            width: 33%;
+            list-style:none;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+        }
+        
+        #carrito-login ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            text-align: center;
+        }
+        
+        #carrito-login ul li{
+            
+            justify-content: center;
+            margin: auto;
+            width: 33%;
+        }
+        
+    }
+    @media (min-width:1200px) {
+        #productos{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: auto;
+            
+        }
+        .extra{
+            width: 33%;
+            margin: auto;
     }
     #barra-extra{
     width: 1200px;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    }
     
+}
+    }
+#contenedor-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
 }
