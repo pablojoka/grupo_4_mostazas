@@ -11,10 +11,9 @@ app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/producto-detalle', (req,res)=>{
+app.get('/productDetail', (req,res)=>{
     res.sendFile(__dirname + '/views/productDetail.html');
-});
-
+ });
 app.get('/carrito', (req,res)=>{
     res.sendFile(__dirname + '/views/productCart.html');
 });
