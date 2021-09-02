@@ -169,6 +169,24 @@ FIN DE SECION "PRODUCTOS"
 
 /*
 
+INICIO SECTION "PRODUCT DETAILS"
+
+*/
+
+.product-details{
+    width: 200vh;
+    height: auto;
+    text-align: left;
+} 
+#product-buttons{
+    text-align: center;
+    margin: auto;
+    max-inline-size: 100px;
+
+}
+
+/*
+
 INICIO SECTION "BARRA EXTRA"
 
 */
