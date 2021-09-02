@@ -42,15 +42,24 @@ nav ul li:hover > ul {
    }
 
 #contenedor-header{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#logo-buscador-carrito{
+#divlogo{
     height: 14vh;
     margin-top: 10px;
-    
-
+    width: 100%;
 }
+
+#buscador{
+    width: 100%;
+}
+
+#carrito-login{
+    width: 100%;
+}
+
 #menu-no-mobile{
     display: none;
 
@@ -137,6 +146,37 @@ width: 100%;
         display: flex;
         border: 0px;
     }
+    #divlogo{
+        
+        width: 33%;
+    }
+    
+    #buscador{
+        width: 33%;
+    }
+    
+    #carrito-login{
+        width: 33%;
+        list-style:none;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+#carrito-login ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+    #carrito-login ul li{
+        
+        justify-content: center;
+        margin: auto;
+        width: 33%;
+    }
     
 }
 @media (min-width:1200px) {
@@ -157,6 +197,13 @@ width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 
+    }
+
+    #contenedor-header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        margin: auto;
     }
     
 }
