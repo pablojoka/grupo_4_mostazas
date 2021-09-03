@@ -151,12 +151,13 @@ h1{
     font-weight: 400;
     padding-top: 5px;
     padding-left: 1vw;
+    text-align: center;
 
 }
 
 article{
     display: flex;
-    width: 390px;
+    width: 250px;
     padding: 1%;
     margin: auto;
 }
