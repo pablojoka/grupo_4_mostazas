@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 /*
 
 INICIO DEL HEADER
@@ -123,6 +124,12 @@ FIN DEL HEADER
 
 */
 
+#ruta{
+    width: 100%;
+    display: none;
+}
+
+
 /*
 
 INICIO DEL SECTION "PRODUCTOS"
@@ -138,7 +145,7 @@ INICIO DEL SECTION "PRODUCTOS"
     
 }
 
-#titulo{
+h1 #titulo{
     width: 100%;
     font-size: 25px;
     font-weight: 400;
@@ -186,6 +193,81 @@ INICIO SECTION "PRODUCT DETAILS"
     max-inline-size: 100px;
 
 }
+/*
+
+FIN SECTION "PRODUCT DETAILS"
+
+*/
+
+/*
+
+INICIO SECTION "contenedor section" //LOGIN
+
+*/
+#contenedor-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;  
+}
+#login-ingresar{
+    width: 98%;
+    padding: 1%;
+    display: block;
+    background-color: lightgray;
+    border: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#login-registro{
+    width: 98%;
+    padding: 1%;
+    display: block;
+    background-color: lightgray;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-login-registro{
+    margin-top: 10px;
+
+}
+
+#contenedor-section h2{
+    text-align: center;
+}
+
+.form-login{
+    margin-top: 10px;
+}
+#contenedor-section label{
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+#contenedor-section input{
+    margin: auto;
+    display: block;
+    text-align: center; 
+}
+#contenedor-section button{
+    margin: auto;
+    display: block;
+    text-align: center; 
+}
+
+/*
+
+FIN SECTION "contenedor section"
+
+*/
 
 /*
 
@@ -198,6 +280,8 @@ INICIO SECTION "BARRA EXTRA"
     flex-wrap: wrap;
     background-color: #31AFD4;
     color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .extra{
 width: 100%;
@@ -244,8 +328,9 @@ FIN SECTION "BARRA EXTRA"
     
       
     nav ul li {
-        font-size: 25px;
-        margin: 0.75rem;
+        font-size: 18px;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
         display: flex;
         border: 0px;
 
@@ -255,7 +340,39 @@ FIN SECTION "BARRA EXTRA"
         width: 33%;
         margin: auto;
     } 
-}
+    #login-ingresar{
+        width: 34%;
+        padding: 1%;
+        display: block;
+    }
+    #login-registro{
+        width: 64%;
+        padding: 1%;
+        display: block;
+    }
+    #contenedor-section{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+    }
+    #login-registro label{
+        width: 48%;
+    }
+    #login-registro input{
+        width: 48%;
+    }
+    .form-login-registro{
+        display: flex;
+    flex-wrap: wrap;
+    }
+    .cincuenta{  /*clase de 50% de ancho*/
+        width: 50%;
+    }
+    #ruta{
+        width: 100%;
+        display:block;
+    }
 
 
 /*DESKTOP*/
@@ -282,11 +399,10 @@ FIN SECTION "BARRA EXTRA"
     #barra-extra{
     width: 1200px;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 
     }
-
     
+   
     
 }
