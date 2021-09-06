@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Mos Tazas | Tazas Sublimadas</title>
+</head>
+
+<body>
+    <div class="contenedor-global">
+        <header>
+            <div id="contenedor-header">
+                <div id="divlogo">
+                    <img id="logo" src="imagenes/logo.png" alt="">
+                    </div>
+                <div id="buscador">
+                    <form action="">
+                        <input type="text">
+                    </form>
+                </div>
+                <div id="carrito-login">
+                    <ul>
+                        <li>Ingresar</li>
+                        <li>Crear Cuenta</li>
+                        <li>Carrito</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="imagenes/menu-icon.png" alt=""></a>
+                        <ul>
+                            <a href="/"> <li>Inicio</li></a>
+                            <a href="#"> <li>Categorias</li></a>
+                            <a href="#"> <li>Contacto</li></a>
+                        </ul>
+                        </li>
+                </ul>
+            </nav>
+
+            <nav id="menu-no-mobile">
+                <ul>
+                    <a href="/"><li>Inicio</li></a>
+                    <a href="#"><li>Categorias</li></a>
+                    <a href="#"><li>Contacto</li></a>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main id="main-section">
+            <div id="ruta">
+                <p><a href="/">Home</a> > Carrito</p>
+            </div>
+            <h2 class="h2-carrito">Carrito de Compras</h2>
+            <section id="Section-de-productos-en-carrito">
+                <article class="productos-en-carrito">
+                    <div class="taza-1">
+                        <div class="cuerpo-producto">
+                            <img class="img-taza-carrito" src="https://d22fxaf9t8d39k.cloudfront.net/c4e8235ca027cdc387dea5e64e718a4989708c3a51bcdfd9661e6f3f06879f0479300.jpeg" alt="img-producto">
+                            <div class="upper-row">
+                                <h3 class="nombre-de-taza"> Nombre taza 1 </h3>
+                                <p class="descripcion-taza">Lorem, ipsis minus exped</p>
+                            </div>
+                            <div class="low-row">
+                                <p class="form-cantidad-carrito">
+                                    Cantidad
+                                    <input class="counter" type="number" name="Cantidad" list="defaultNumbers">
+                                    <datalist id="defaultNumbers">
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                        <option value="4"></option>
+                                        <option value="5"></option>
+                                    </datalist>
+                                </p>
+                                    <p class="precio-producto-carrito">Precio $0000</p>
+                                    <p class="quitar-producto">Quitar Producto</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <p class="Agregar-mas-productos">Agregar mas productos</p> 
+            </section>
+            <section id="Detalles-del-envio">
+                <h3 class="Detalles-envio">Detalles del Envio</h3>
+                <form class="datos-detalle" action="">
+                    <div >
+                        <label for="Nombre-apellido">Nombre y Apellido</label><br>
+                        <input type="text" name="Nombre-apellido" id="Nombre-apellido">
+                    </div>
+
+                    <div>
+                        <label for="Telefono">Telefono</label> <br>
+                        <input type="tel" name="Telefono" id="Telefono">
+                    </div>
+                    <div>
+                        <label for="Documento">Documento</label> <br>
+                        <input type="text" name="Documento" id="Documento">
+                    </div>
+                    <div >
+                        <label for="Provincia">Provincia</label> <br>
+                        <input type="text" name="Provincia" id="Provincia">
+                    </div>
+                    <div >
+                        <label for="Ciudad">Ciudad</label> <br>
+                        <input type="text" name="Ciudad" id="Ciudad">
+                    </div>
+                    <div >
+                        <label for="Calle">Calle</label> <br>
+                        <input type="text" name="Calle" id="Calle">
+                    </div>
+                    <div >
+                        <label for="Piso-Depto">Piso y Departamento</label> <br>
+                        <input type="text" name="Piso-Depto" id="Piso-Depto">
+                    </div>
+                </form>
+            </section>
+            <p class="Finalizar-compra">Finalizar Compra $####</p>
+        <section id="barra-extra">
+            <div class="extra">Aceptamos todas las tarjetas</div>
+            <div class="extra">Envíos en el día</div>
+            <div class="extra">Protegemos tus datos</div>
+        </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+</body>
