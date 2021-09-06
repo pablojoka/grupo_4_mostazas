@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pablojoka/grupo_4_mostazas#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "express": "^4.17.1"
   }
 }
