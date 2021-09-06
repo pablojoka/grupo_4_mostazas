@@ -207,6 +207,12 @@ box-shadow: 0px 0px 10px #000000;
     height: auto;
 }
 
+.taza-individual-details{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
 /*
 
 FIN DE SECION "PRODUCTOS"
@@ -220,9 +226,11 @@ INICIO SECTION "PRODUCT DETAILS"
 */
 
 .product-details{
-    width: 200vh;
+    width: 100%;
     height: auto;
     text-align: left;
+    margin-right: 10px;
+    display: block;
 } 
 .counter{
     text-align: center;
@@ -243,7 +251,8 @@ width: 8%;
     
 }
 .purchase-button{
-    background-color: white;
+    background-color: black;
+
     transition-duration: 0.4s;
     font-size: 25px;
 }
@@ -256,7 +265,7 @@ width: 8%;
     padding: 1vh;
     margin:auto;
     width: fit-content;
-    background-color: white;
+    background-color: black;
     transition-duration: 0.4s;
 }
 .add-to-cart:hover{
@@ -301,6 +310,10 @@ width: 8%;
     background-color: #7be0da;
     color: white;
 
+}
+
+.product-description{
+    width: 100%;
 }
 /* #menu-no-mobile{
     display: none;
@@ -707,6 +720,21 @@ FINAL FOOTER
         
         margin-left: 10%;
     }
+    .product-description{
+        width: 59%;
+    }
+    
+    .product-details{
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+        display: flex;
+    } 
+    .taza-individual-details {
+        width: 40%;
+        height: auto;
+        margin-right: 10px;
+    }
 }
 
 /*DESKTOP*/
@@ -746,8 +774,14 @@ FINAL FOOTER
     #contenedor-footer{
         max-width: 1200px;
     }
-    
-    
+    .taza-individual-details{
+        width: 33%;
+        height: auto;
+        margin-right: 10px;
+    }
+    .product-description{
+        width: 65%;
+    }
     
     
     
