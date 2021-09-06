@@ -1,5 +1,5 @@
 *{
-    border: solid 1px red;
+/*     border: solid 1px red; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -327,7 +327,6 @@ INICIO SECTION "contenedor section" //LOGIN
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-
 }
 #login-registro{
     width: 98%;
@@ -374,6 +373,144 @@ INICIO SECTION "contenedor section" //LOGIN
 /*
 
 FIN SECTION "contenedor section"
+
+*/
+
+/*
+
+INICIO SECTION "contenedor productos carrito" // CARRITO
+
+*/
+
+.h2-carrito {
+    padding: 2% 2%;
+    font-size: 5vw;
+}
+
+#Section-de-productos-en-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: auto;
+    padding: 1% 0%;
+}
+
+.productos-en-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    background-color: lightgray
+}
+
+.taza-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.img-taza-carrito {
+    width: 100%;
+}
+
+.cuerpo-producto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upper-row{
+    width: 100%;
+    padding: 2% 1%;
+}
+
+.nombre-de-taza {
+    width: 100%;
+    height: 25%;
+    font-size: 5vw;
+}
+
+.descripcion-taza {
+    width: 100%;
+    font-size: 4vw;
+    padding-top: 3vw;
+}
+
+.low-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.form-cantidad-carrito {
+    width: 25%;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.precio-producto-carrito {
+    width: 25%;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.quitar-producto {
+    width: 25%;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+}
+
+.Agregar-mas-productos {
+    margin: auto;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    background-color: #000000;
+    width: 40%;
+}
+
+#Detalles-del-envio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: auto;
+    padding: 1% 0%;
+    background-color: lightgray;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.Detalles-envio {
+    padding: 1% 1%;
+    font-size: 5vw;
+}
+
+.datos-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 2%;
+    font-size: 4vw;
+}
+
+.Finalizar-compra {
+    margin: auto;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    background-color: #000000;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+/*
+
+FIN SECTION "contenedor productos carrito" // CARRITO
 
 */
 
