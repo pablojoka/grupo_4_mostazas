@@ -180,7 +180,6 @@ h1{
     padding-top: 5px;
     padding-left: 1vw;
     text-align: center;
-
 }
 
 article{
@@ -234,8 +233,8 @@ INICIO SECTION "PRODUCT DETAILS"
 } 
 .counter{
     text-align: center;
-box-sizing: content-box;
-width: 8%;
+    box-sizing: content-box;
+    width: 8%;
 }
 #product-buttons{
     border: none;
@@ -402,8 +401,6 @@ button{
     padding: 5px 10px;
     margin: 10px;
     border: solid 3px white;
-
-
 }
 
 
@@ -455,6 +452,7 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
 .cuerpo-producto {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .upper-row{
@@ -465,6 +463,7 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
 .nombre-de-taza {
     width: 100%;
     height: 25%;
+    font-size: 5vw;
 }
 
 .descripcion-taza {
@@ -485,22 +484,17 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
 
 .form-cantidad-carrito {
     width: 25%;
-    font-size: 4vw;
-    text-align: center;
+    font-weight: bold;
 }
 
-.precio-producto-carrito {
-    width: 25%;
-    font-size: 4vw;
-    text-align: center;
+.precio-centrado {
+    display: flex;
+    align-items:center;
 }
 
-.quitar-producto {
+.quitar-producto-taza-carrito {
     width: 25%;
     font-size: 4vw;
-    text-align: center;
-    color: white;
-    background-color: #000000;
 }
 
 .Agregar-mas-productos {
@@ -508,13 +502,10 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
     text-align: center;
     font-size: 4vw;
     color: white;
-    background-color: #000000;
     width: 40%;
 }
 
 #Detalles-del-envio {
-    display: flex;
-    flex-wrap: wrap;
     width: 97%;
     margin: auto;
     padding: 1% 0%;
@@ -523,16 +514,11 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
     margin-bottom: 2%;
 }
 
-.Detalles-envio {
-    padding: 1% 1%;
-    font-size: 5vw;
-}
-
 .datos-detalle {
     display: flex;
     flex-wrap: wrap;
     padding: 0% 2%;
-    font-size: 4vw;
+    align-items: center;
 }
 
 .Finalizar-compra {
@@ -543,6 +529,11 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
     background-color: #000000;
     width: 40%;
     margin-bottom: 2%;
+}
+
+#boton-quitar {
+    margin: 0%;
+    border: none;
 }
 
 /*
@@ -626,9 +617,11 @@ FINAL FOOTER
 */
 
 
-
-@media (min-width:480px) {
-    
+/* CELULAR */
+@media (min-width:320px) {
+    .descripcion-taza {
+        display: none;
+    }
 }
 
 /*TABLET*/
@@ -703,9 +696,6 @@ FINAL FOOTER
         width: 50%;
     }
     
-    
-    
-
     #ruta{
         width: 100%;
         display:block;
@@ -721,7 +711,7 @@ FINAL FOOTER
         margin-left: 10%;
     }
     .product-description{
-        width: 59%;
+        width: 58%;
     }
     
     .product-details{
@@ -735,6 +725,31 @@ FINAL FOOTER
         height: auto;
         margin-right: 10px;
     }
+
+    .descripcion-taza {
+        display: block;
+    }
+
+    .cuerpo-producto {
+        justify-content: space-between;
+    }
+
+    .precio-producto-carrito {
+        width: 100%;
+        height: 33%;
+        margin: auto;
+    }
+
+    .form-cantidad-carrito {
+        width: 100%;
+        height: 33%;
+    }
+
+    .quitar-producto {
+        width: 100%;
+        height: 33%;
+    }
+
 }
 
 /*DESKTOP*/
@@ -783,7 +798,13 @@ FINAL FOOTER
         width: 65%;
     }
     
-    
+    #Section-de-productos-en-carrito {
+        max-width: 1200px;
+    }
+
+    #Detalles-del-envio {
+        max-width: 1200px;
+    }
     
 }
 
