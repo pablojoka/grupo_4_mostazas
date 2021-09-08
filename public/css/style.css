@@ -460,11 +460,7 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
     padding: 2% 1%;
 }
 
-.nombre-de-taza {
-    width: 100%;
-    height: 25%;
-    font-size: 5vw;
-}
+
 
 .descripcion-taza {
     width: 100%;
