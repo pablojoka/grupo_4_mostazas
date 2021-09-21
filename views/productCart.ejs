@@ -16,54 +16,16 @@
 
 <body>
     <div class="contenedor-global">
-        <header>
-            <div id="contenedor-header">
-                <div id="divlogo">
-                    <a href="/"><img id="logo" src="imagenes/logo.png"  alt=""></a>
-                </div>
-                <div id="buscador">
-                    <form action="">
-                        <input type="text" placeholder="Buscar..">
-                    </form>
-                </div>
-                <div id="carrito-login">
-                    <ul>
-                        <li><a href="/login">Ingresar</a></li>
-                        <li><a href="/registro">Crear Cuenta</a></li>
-                        <li><a href="/carrito">Carrito</a></li>
-                    </ul>
-                </div>
+        <%- include('./partials/header.ejs') %>
 
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="imagenes/menu-icon.png" alt=""></a>
-                        <ul>
-                            <li><a href="/login">Ingresar</a></li>
-                            <a href="#"> <li>Categorias</li></a>
-                            <a href="#"> <li>Contacto</li></a>
-                        </ul>
-                        </li>
-                </ul>
-            </nav>
-
-            <nav id="menu-no-mobile">
-                <ul>
-                    <a href="/"><li>Inicio</li></a>
-                    <a href="#"><li>Categorias</li></a>
-                    <a href="#"><li>Contacto</li></a>
-                </ul>
-            </nav>
-            
-        </header>
 
         <main id="main-section">
             <div id="ruta">
                 <p><a class="negro" href="/">Home</a> > Carrito</p>
             </div>
-            <h2 class="h2-carrito">Carrito de Compras</h2>
             <section id="Section-de-productos-en-carrito">
+                <h2>Carrito de Compras</h2>
+
                 <article class="productos-en-carrito">
                         <div class="cuerpo-producto">
                             <div class="taza-individual-details">
@@ -140,13 +102,7 @@
             <div class="extra">Protegemos tus datos</div>
         </section>
         </main>
-        <footer>
-            <div id="contenedor-footer">
-                    <img class="logo-footer" src="imagenes/logo.png" alt="">
-                
-                    <img class="redes" src="imagenes/ig.png" alt="">
+        <%- include('./partials/footer.ejs') %>
 
-            </div>    
-        </footer>
     </div>
 </body>

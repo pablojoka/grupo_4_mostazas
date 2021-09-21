@@ -17,85 +17,46 @@
 <body>
 
     <div id="contenedor-global">
-        <header>
-            <div id="contenedor-header">
-                <div id="divlogo">
-                    <a href="/"><img id="logo" src="imagenes/logo.png"  alt=""></a>
-                </div>
-                <div id="buscador">
-                    <form action="">
-                        <input type="text" placeholder="Buscar..">
-                    </form>
-                </div>
-                <div id="carrito-login">
-                    <ul>
-                        <li><a href="/login">Ingresar</a></li>
-                        <li><a href="/registro">Crear Cuenta</a></li>
-                        <li><a href="/carrito">Carrito</a></li>
+        <%- include('./partials/header.ejs') %>
 
-                    </ul>
-                </div>
-
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="imagenes/menu-icon.png" alt=""></a>
-                        <ul>
-                            <a href="/">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="#">
-                                <li>Categorias</li>
-                            </a>
-                            <a href="#">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <nav id="menu-no-mobile">
-                <ul>
-                    <a href="/">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="#">
-                        <li>Categorias</li>
-                    </a>
-                    <a href="#">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
-        </header>
         <section id="contenedor-section">
         <div id="ruta">
-                <p><a class="negro" href="/">Home</a> > Crear Cuenta</p>
+                <p><a class="negro" href="/">Home</a> > Login</p>
         </div>    
-           
+            <article id="login-ingresar">
+                <h2>Ingresar</h2>
+                <form class="form-login" action="">
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" name="usuario" id="usuario">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña">
+                    <button class="glow-on-hover" type="submit">Ingresar</button>
+
+                </form>
+
+            </article>
             <article id="login-registro">
                 <h2>¿No tenés cuenta?</g2>
-                    <h2>Completá el formulario para crear tu cuenta</h2>
+                    <h2>Registrate acá</h2>
 
                     <form class="form-login-registro" action="">
                         <div class="cincuenta">
                             <label class="marg5px" for="email">Correo Electronico</label>
-                            <input class="marg5px" type="email" name="email" id="email">
-                            <br>
+                            <input class="effect-8" type="email" name="email" id="email">
+                        </div>
+                        <div class="cincuenta">
                             <label class="marg5px" for="nuevo-usuario">Nombre de usuario</label>
                             <input class="marg5px" type="text" name="usuario" id="nuevo-usuario"><br>
                         </div>
-                        
                         <div class="cincuenta">
                             <label class="marg5px" for="nueva-contraseña">Contraseña</label>
                             <input class="marg5px" type="password" name="contraseña" id="nueva-contraseña">
-                        <br>
+                        </div>
+                        <div class="cincuenta">
                             <label class="marg5px" for="nueva-contraseña2">Repetir Contraseña</label>
                             <input class="marg5px" type="password" name="contraseña2" id="nueva-contraseña2">
                         </div>    
-                        <button class="glow-on-hover"  type="submit">Registrarse</button>
-
+                        <button  class="glow-on-hover" type="submit">Registrarse</button>
                     </form>
 
             </article>
@@ -150,13 +111,8 @@
             <div class="extra">Protegemos tus datos</div>
 
         </section>
-        <footer>
-            <div id="contenedor-footer">
-                    <img class="logo-footer" src="imagenes/logo.png" alt="">
-                
-                    <img class="redes" src="imagenes/ig.png" alt="">
-            </div>    
-        </footer>
+        <%- include('./partials/footer.ejs') %>
+
     </div>
 </body>
 

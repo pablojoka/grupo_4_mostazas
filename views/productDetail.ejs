@@ -8,58 +8,8 @@
     <title>Mos Tazas | Tazas Sublimadas</title>
 </head>
 <body>
-        <header>
-            <div id="contenedor-header">
-                <div id="divlogo">
-                    <a href="/"><img id="logo" src="imagenes/logo.png"  alt=""></a>
-                </div>
-                <div id="buscador">
-                    <form action="">
-                        <input type="text" placeholder="Buscar..">
-                    </form>
-                </div>
-                <div id="carrito-login">
-                    <ul>
-                        <li><a href="/login">Ingresar</a></li>
-                        <li><a href="/registro">Crear Cuenta</a></li>
-                        <li><a href="/carrito">Carrito</a></li>
+    <%- include('./partials/header.ejs') %>
 
-                    </ul>
-                </div>
-
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/"><img src="imagenes/menu-icon.png" alt=""></a>
-                        <ul>
-                            <a href="/">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="#">
-                                <li>Categorias</li>
-                            </a>
-                            <a href="#">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <nav id="menu-no-mobile">
-                <ul>
-                    <a href="/">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="#">
-                        <li>Categorias</li>
-                    </a>
-                    <a href="#">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
-        </header>
 <section id="contenedor-section">
     <main>
         <div id="ruta">
@@ -143,13 +93,7 @@
             <div class="extra">Protegemos tus datos</div>
     
         </section>
-    <footer>
-            <div id="contenedor-footer">
-                    <img class="logo-footer" src="imagenes/logo.png" alt="">
-                
-                    <img class="redes" src="imagenes/ig.png" alt="">
+        <%- include('./partials/footer.ejs') %>
 
-            </div>    
-        </footer>
 </body>
 </html>
