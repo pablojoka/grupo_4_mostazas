@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Mos Tazas | Tazas Sublimadas</title>
+</head>
+
+<body>
+
+    <div id="contenedor-global">
+        <%- include('./partials/header.ejs') %>
+
+        <section id="contenedor-section">
+        <div id="ruta">
+                <p><a class="negro" href="/">Home</a> > Crear producto</p>
+        </div>    
+           
+            <article id="crear-producto">
+                <h2>Crear Producto</h2><br>
+
+                    <form class="crear-producto" action="POST">
+                            
+                            <label class="marg5px" for="nombre-taza"><b>Nombre de taza</b></label>
+                            <input class="marg5px" type="text" name="nombre-taza" id="nombre-taza"><br>
+                            <label class="marg5px" for="descripcion"><b>Descripción</b></label>
+                            <input class="marg5px" type="text-area" name="descripcion" id="descripcion">
+                            <br>
+                            <label class="marg5px" for="tipo-taza"><b>Material</b></label>
+                            <input type="radio" id="Ceramica" name="tipo-taza" value="Ceramica">
+                            <label for="Ceramica">Cerámica</label>
+                            <input type="radio" id="magica" name="tipo-taza" value="magica">
+                            <label for="magica">Mágica</label>
+                            <br>
+                            <label class="marg5px" for="precio"><b>Precio</b></label>
+                            <input class="marg5px" type="text" name="precio" id="precio"><br>
+                            <br>
+                            <label for="imagen">Seleccionar Imagen:</label>
+                            <input type="file" id="myfile" name="imagen"><br><br>
+                            <input class="glow-on-hover" type="submit" value="Subir">
+                            
+                                             
+
+                    </form>
+
+            </article>
+
+        </section>
+
+       
+        <%- include('./partials/footer.ejs') %>
+
+    </div>
+</body>
+
+</html>
