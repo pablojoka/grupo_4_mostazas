@@ -34,6 +34,12 @@ app.get('/registro', (req,res)=>{
 app.get('/login', (req,res)=>{
     res.render(__dirname + '/views/login.ejs');
 });
+app.get('/crear-producto', (req,res)=>{
+    res.render(__dirname + '/views/crear-producto.ejs');
+});
+app.get('/editar-producto', (req,res)=>{
+    res.render(__dirname + '/views/editar-producto.ejs');
+});
              /* Sistema de ruteo */
 // const rutaMain = require('./router/main)
 //app.use('/',rutaMain);

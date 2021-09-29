@@ -671,6 +671,8 @@ FINAL FOOTER
         padding: 1%;
         display: block;
     }
+
+    
     #contenedor-section{
         display: flex;
         flex-wrap: wrap;
