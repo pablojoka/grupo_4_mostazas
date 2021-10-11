@@ -5,8 +5,8 @@
         "precio": 900,
         "categoria": "Música",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 2,
@@ -14,8 +14,8 @@
         "precio": 900,
         "categoria": "Música",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 3,
@@ -23,8 +23,8 @@
         "precio": 900,
         "categoria": "Arte",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 4,
@@ -32,8 +32,8 @@
         "precio": 900,
         "categoria": "Arte",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 5,
@@ -41,8 +41,8 @@
         "precio": 900,
         "categoria": "Películas",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 6,
@@ -50,8 +50,8 @@
         "precio": 1200,
         "categoria": "Películas",
         "material": "Mágica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 7,
@@ -59,8 +59,8 @@
         "precio": 900,
         "categoria": "",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 8,
@@ -68,8 +68,8 @@
         "precio": 900,
         "categoria": "",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 9,
@@ -77,8 +77,8 @@
         "precio": 900,
         "categoria": "Memes",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 10,
@@ -86,8 +86,8 @@
         "precio": 900,
         "categoria": "Memes",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 11,
@@ -95,8 +95,8 @@
         "precio": 900,
         "categoria": "Música",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 12,
@@ -104,8 +104,8 @@
         "precio": 900,
         "categoria": "Música",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 13,
@@ -113,8 +113,8 @@
         "precio": 900,
         "categoria": "Criptomonedas",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 14,
@@ -122,8 +122,8 @@
         "precio": 900,
         "categoria": "Criptomonedas",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 15,
@@ -131,8 +131,8 @@
         "precio": 900,
         "categoria": "Criptomonedas",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 16,
@@ -140,8 +140,8 @@
         "precio": 900,
         "categoria": "Series",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 17,
@@ -149,8 +149,8 @@
         "precio": 900,
         "categoria": "Series",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 18,
@@ -158,8 +158,8 @@
         "precio": 900,
         "categoria": "Películas",
         "material": "Cerámica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     },
     {
         "id": 19,
@@ -167,7 +167,7 @@
         "precio": 1200,
         "categoria": "Películas",
         "material": "Mágica",
-        "description": "",
-        "image": ""
+        "descripcion": "",
+        "imagen": ""
     }
 ]
