@@ -1,5 +1,4 @@
-// ************ Require's ************
-/*const express = require('express');
+const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
@@ -8,7 +7,19 @@ const mainController = require('../controllers/mainController');
 
 
 router.get('/', mainController.index); 
-//router.post('/search', mainController.search);  
+router.get('/productDetail', mainController.productDetail); 
+router.get('/carrito', mainController.carrito); 
+router.get('/registro', mainController.registro); 
+router.get('/login', mainController.login); 
+router.get('/crear-producto', mainController.crear); 
+router.get('/editar-producto', mainController.editar); 
 
 
-module.exports = router;*/
+
+
+//router.post('/search', mainController.search);
+router.get('/search', mainController.search);
+
+
+
+module.exports = router;

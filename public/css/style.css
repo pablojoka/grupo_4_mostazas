@@ -902,7 +902,7 @@ FINAL FOOTER
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
-    position: relative;
+    /*position: relative;*/
     margin: auto;
   }
   
