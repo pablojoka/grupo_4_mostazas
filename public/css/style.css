@@ -83,6 +83,11 @@ text-align: center;
     color: white;
 }
 
+#carrito-login ul li a{
+        font-family: 'Gluten', cursive;
+
+}
+
 
 nav{
     width: 100%;
@@ -90,17 +95,17 @@ nav{
 }
 
 nav ul li{
-    border: #31AFD4 solid 1px;
+    border: rgba(234, 234, 234, 0.22) solid 1px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #7be0ad;
+    color: #ffffff;
+    font-family: 'Gluten', cursive;
 
 }
 
 nav ul ul{
     display: none;
-    
     list-style: none;
 }
 
@@ -108,6 +113,8 @@ nav ul ul a{
     color: white;
     font-size: 25px;
     text-decoration: none;
+
+
     
 }
 
@@ -128,6 +135,8 @@ nav ul li:hover > ul {
 #menu-no-mobile{
     display: none;
 }
+
+
 #menu-no-mobile > ul {
     display: flex;
     justify-content: center;
@@ -161,9 +170,7 @@ INICIO DEL SECTION "PRODUCTOS"
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    -moz-box-shadow: 0px 0px 3px #000000;
--webkit-box-shadow: 0px 0px 3px #000000;
-box-shadow: 0px 0px 3px #000000;
+    
 }
 #productos-extra{
     display: flex;
@@ -182,18 +189,27 @@ h1{
     text-align: center;
 }
 
-article{
+h4{
+    font-family: 'Gluten', cursive;
+    font-weight: 300;
+    padding: 5px;
+    font-size: 18px;
+}
+
+article {
     display: flex;
-    width: 250px;
+    width: 200px;
     padding: 1%;
     margin: 12px auto;
-    background-color: #e0e0e0;
+    border: 1px solid rgba(82, 82, 82, 0.22);
+    border-radius: 14px;
 }
 
 article:hover{
-    -moz-box-shadow: 0px 0px 10px #000000;
--webkit-box-shadow: 0px 0px 10px #000000;
-box-shadow: 0px 0px 10px #000000;
+    -moz-box-shadow: 0px 0px 1px #000000;
+-webkit-box-shadow: 0px 0px 1px #000000;
+box-shadow: 0px 0px 1px #000000;
+background-color: rgba(234, 234, 234, 0.22);
 }
 
 .taza-individual{
@@ -623,7 +639,15 @@ FINAL FOOTER
 /*TABLET*/
 @media (min-width:769px) {
     
-    
+    article{
+        display: flex;
+        width: 280px;
+        padding: 1%;
+        margin: 12px auto;
+        border: 1px solid rgba(82, 82, 82, 0.22);
+        border-radius: 14px;
+    }
+
     #divlogo{
         
         width: 33%;
@@ -638,8 +662,7 @@ FINAL FOOTER
     }
     #menu-no-mobile{
         display: block;
-        color: #7be0ad;
-        border-top: 1px solid grey;
+        color: #ffffff;
     }
 
 
@@ -649,9 +672,9 @@ FINAL FOOTER
     
       
     nav ul li {
-        font-size: 18px;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
+        font-size: 22px;
+        margin-left: 1rem;
+        margin-right: 1rem;
         display: flex;
         border: 0px;
 
@@ -867,3 +890,85 @@ FINAL FOOTER
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #000000;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
