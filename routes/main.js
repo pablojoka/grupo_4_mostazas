@@ -3,11 +3,10 @@ const router = express.Router();
 
 // ************ Controller Require ************
 const mainController = require('../controllers/mainController');
-
+//const productosController = require ('../controllers/productosControllers')
 
 
 router.get('/', mainController.index); 
-router.get('/productDetail', mainController.productDetail); 
 router.get('/carrito', mainController.carrito); 
 router.get('/registro', mainController.registro); 
 router.get('/login', mainController.login); 

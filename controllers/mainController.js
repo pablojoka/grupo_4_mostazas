@@ -13,9 +13,11 @@ const controller = {
 			tazas: tazas
 		})//productos(si se agrega alguna seccion, hay que hacer un filter, para llamarla al producto deseado)// faltaria tener un JSON de los productos para poder llamarlo en el controller y usarlo en la vista
 	},
-	productDetail: (req, res) => {
-		res.render('productDetail.ejs')
-	},
+	/*detalle: (req, res) => {
+		res.render('productDetail.ejs', {
+			tazas: tazas
+		})
+	},*/
 	carrito: (req, res) => {
 		res.render('productCart.ejs')
 	},

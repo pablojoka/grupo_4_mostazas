@@ -4,7 +4,7 @@ const path = require('path');
 /* En la constante "products" ya tienen los productos que están 
 guardados en la carpeta Data como Json (un array de objetos literales) */
 const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const tazas = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 /* La constante "toThousand" deben enviarla como parametro en el res.render,
 les ayudará para mostrar el precio final adecuadamente con 
@@ -16,25 +16,25 @@ const controller = {
 	// (get) Root - Mostrar todos los productos
 	index: (req, res) => {
 		res.render("productos.ejs", {
-			products: products
+			tazas: tazas
 		})
 	},
 
 	// (get) Detail - Detalle de un producto
 	detalle: (req, res) => {
 		const id = req.params.id;
-		const product = products.find(product => {
-			return product.id == id
+		const taza = tazas.find(taza => {
+			return taza.id == id
 		})
-
-		res.render("prodcutDetail.ejs", { //***EEEEEEEEEEEE***
-			product: product
+        res.render("productDetail.ejs", { 
+			taza: taza
 		})
 	},
 
 	// (get) Create - Formulario para crear
+    
 	crear: (req, res) => {  
-		res.render("product-create-form.ejs"); //***EEEEEEEEEEEE***
+		res.render("product-create-form.ejs"); //***SIN COMPLETAR TODAVIA***
 	},
 	
 	// (post) Create - Método para guardar la info
@@ -66,7 +66,7 @@ const controller = {
 			product: product
 		})
 	},
-
+/*
 	// (post) Update - Método para actualizar la info
 	subir: (req, res) => {
 		const id = req.params.id;
@@ -80,7 +80,7 @@ const controller = {
 			category: req.body.category,
 			description: req.body.description,
 			/* ...req.body, */
-			image: req.file ? req.file.filename : productToEdit.image
+		/*	image: req.file ? req.file.filename : productToEdit.image
 		}
 
 		let newProducts = products;
@@ -97,7 +97,7 @@ const controller = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
 		res.redirect("/")
-	}
+	}*/
 };
 
 module.exports = controller;
