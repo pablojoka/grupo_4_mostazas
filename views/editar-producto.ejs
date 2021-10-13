@@ -21,8 +21,14 @@
 <body>
 
     <div id="contenedor-global">
-        <%- include('./partials/header.ejs') %>
-
+<%- include('./partials/header.ejs') %>
+        <nav id="menu-no-mobile">
+            <ul>
+                <a href="/"><li>Inicio</li></a>
+                <a href="#"><li>Categorias</li></a>
+                <a href="#"><li>Contacto</li></a>
+            </ul>
+        </nav>
         <section id="contenedor-section">
         <div id="ruta">
                 <p><a class="negro" href="/">Home</a> > Editar producto</p>

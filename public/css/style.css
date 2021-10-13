@@ -134,6 +134,11 @@ nav ul li:hover > ul {
 
 #menu-no-mobile{
     display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #000;
+    z-index: 99;
 }
 
 
@@ -663,6 +668,8 @@ FINAL FOOTER
     #menu-no-mobile{
         display: block;
         color: #ffffff;
+        position: -webkit-sticky;
+    position: sticky;
     }
 
 

@@ -6,7 +6,7 @@
         "categoria": "Música",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "beatles01.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "categoria": "Música",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "beatles02.jpg"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "categoria": "Arte",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "van-gogh-01.jpg"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "categoria": "Arte",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "van-gogh-02.jpg"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "categoria": "Películas",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "hp01.jpg"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "categoria": "Películas",
         "material": "Mágica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "hp02.jpg"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "categoria": "",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "maradona01.jpg"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "categoria": "",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "maradona02.jpg"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "categoria": "Memes",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "harold-cara.jpg"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "categoria": "Memes",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "this-is-fine.jpg"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "categoria": "Música",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "taylor-folklore.jpg"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "categoria": "Música",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "taylor-lover.jpg"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "categoria": "Criptomonedas",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "bitcoin1.jpg"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "categoria": "Criptomonedas",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "bitcoin2.jpg"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "categoria": "Criptomonedas",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "ethereum.jpg"
     },
     {
         "id": 16,
@@ -141,7 +141,7 @@
         "categoria": "Series",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "twin1.jpg"
     },
     {
         "id": 17,
@@ -150,7 +150,7 @@
         "categoria": "Series",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "twin2.jpg"
     },
     {
         "id": 18,
@@ -159,7 +159,7 @@
         "categoria": "Películas",
         "material": "Cerámica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "darthvadder.jpg"
     },
     {
         "id": 19,
@@ -168,6 +168,6 @@
         "categoria": "Películas",
         "material": "Mágica",
         "descripcion": "",
-        "imagen": ""
+        "imagen": "yodamagica.jpg"
     }
 ]

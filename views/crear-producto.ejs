@@ -21,8 +21,14 @@
 <body>
 
     <div id="contenedor-global">
-        <%- include('./partials/header.ejs') %>
-
+<%- include('./partials/header.ejs') %>
+        <nav id="menu-no-mobile">
+            <ul>
+                <a href="/"><li>Inicio</li></a>
+                <a href="#"><li>Categorias</li></a>
+                <a href="#"><li>Contacto</li></a>
+            </ul>
+        </nav>
         <section id="contenedor-section">
         <div id="ruta">
                 <p><a class="negro" href="/">Home</a> > Crear producto</p>
@@ -31,7 +37,7 @@
             <article id="login-registro">
                 <h2>Crear Producto</h2><br>
 
-                    <form class="crear-producto" action="" method="POST">
+                    <form class="crear-producto" action="/productos" method="POST" enctype="multipart/form-data">
                             
                             <label class="marg5px" for="nombre-taza"><b>Nombre de taza</b></label>
                             <input class="marg5px" type="text" name="nombre-taza" id="nombre-taza"><br>

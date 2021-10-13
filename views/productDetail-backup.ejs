@@ -18,51 +18,19 @@
 <title>Mos Tazas | Tazas Sublimadas</title>
 </head>
 <body>
-    <%- include('./partials/header.ejs') %>
-
+<%- include('./partials/header.ejs') %>
+        <nav id="menu-no-mobile">
+            <ul>
+                <a href="/"><li>Inicio</li></a>
+                <a href="#"><li>Categorias</li></a>
+                <a href="#"><li>Contacto</li></a>
+            </ul>
+        </nav>
 <section id="contenedor-section">
     <main>
         <div id="ruta">
             <p><a class="negro" href="/">Home</a> > Productos</p>
     </div> 
-
-
-    <!--
-
-        <article class="product-details">
-            <div class="taza-individual-details">
-                <img src="/imagenes/<%= tazas.imagen %> " alt="" class="img-producto">
-                <i class="fas fa-truck"></i>
-            </div>
-            <div class="product-description">
-                <h3><%= tazas.nombre %></h3>
-                <p><%= tazas.descripcion %></p>
-                <br>
-                <h4>Cantidad<input class="counter" type="number" name="Cantidad" list="defaultNumbers">
-                    <datalist id="defaultNumbers">
-                      <option value="1">
-                      <option value="2">
-                      <option value="3">
-                      <option value="4">
-                      <option value="5">
-                    </datalist> 
-</h4>
-<br>
-<h3 class="precio"> Precio total: $<%= tazas.precio %></h3>
-<div id="product-buttons">
-    <button class="glow-on-hover"  type="submit">Agregar al Carrito</button>
-<br>
-<button class="glow-on-hover"  type="submit">Finalizar compra
-</div>
-
-</div>
-</article>
-
-
-    -->
-
-
-
 
 
         <article class="product-details">

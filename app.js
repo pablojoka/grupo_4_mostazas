@@ -17,7 +17,7 @@ app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
 
 
 /**********template engine ******/
-app.set('veiw engine','ejs');
+app.set('view engine','ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
 
