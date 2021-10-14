@@ -44,7 +44,6 @@ const controller = {
 			search: search,
 			toThousand: toThousand,
 		});
-		res.render("results")
 	}
 }
 

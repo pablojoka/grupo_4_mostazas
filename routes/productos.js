@@ -32,9 +32,9 @@ router.get('/', productosController.index);
 router.get('/detalle/:id/', productosController.detalle); 
 
 // Crear un producto
-/*
+
 router.get('/crear/', productosController.crear); 
-router.post('/', upload.single("image"), productosController.store);
+router.post('/',  productosController.store);
 
 // Editar un producto 
 router.get('/editar/:id', productosController.editar); 
@@ -42,7 +42,7 @@ router.put('/:id', upload.single("image"), productosController.subir);
 
 // Eliminar un producto 
 router.eliminar('/:id', productosController.eliminar);
-*/
+
 module.exports = router;
 
 

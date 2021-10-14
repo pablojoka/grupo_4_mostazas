@@ -1,173 +1,188 @@
 [
-    {
-        "id": 1,
-        "nombre": "The Beatles 01",
-        "precio": 900,
-        "categoria": "Música",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "beatles01.jpg"
-    },
-    {
-        "id": 2,
-        "nombre": "The Beatles 02",
-        "precio": 900,
-        "categoria": "Música",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "beatles02.jpg"
-    },
-    {
-        "id": 3,
-        "nombre": "Van Gogh 01",
-        "precio": 900,
-        "categoria": "Arte",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "van-gogh-01.jpg"
-    },
-    {
-        "id": 4,
-        "nombre": "Van Gogh 02",
-        "precio": 900,
-        "categoria": "Arte",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "van-gogh-02.jpg"
-    },
-    {
-        "id": 5,
-        "nombre": "Harry Potter 01",
-        "precio": 900,
-        "categoria": "Películas",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "hp01.jpg"
-    },
-    {
-        "id": 6,
-        "nombre": "Harry Potter 02",
-        "precio": 1200,
-        "categoria": "Películas",
-        "material": "Mágica",
-        "descripcion": "",
-        "imagen": "hp02.jpg"
-    },
-    {
-        "id": 7,
-        "nombre": "Maradona 01",
-        "precio": 900,
-        "categoria": "",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "maradona01.jpg"
-    },
-    {
-        "id": 8,
-        "nombre": "Maradona 02",
-        "precio": 900,
-        "categoria": "",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "maradona02.jpg"
-    },
-    {
-        "id": 9,
-        "nombre": "Harold",
-        "precio": 900,
-        "categoria": "Memes",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "harold-cara.jpg"
-    },
-    {
-        "id": 10,
-        "nombre": "This is Fine",
-        "precio": 900,
-        "categoria": "Memes",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "this-is-fine.jpg"
-    },
-    {
-        "id": 11,
-        "nombre": "Taylor Swift 01",
-        "precio": 900,
-        "categoria": "Música",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "taylor-folklore.jpg"
-    },
-    {
-        "id": 12,
-        "nombre": "Taylor Swift 02",
-        "precio": 900,
-        "categoria": "Música",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "taylor-lover.jpg"
-    },
-    {
-        "id": 13,
-        "nombre": "Bitcoin 01",
-        "precio": 900,
-        "categoria": "Criptomonedas",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "bitcoin1.jpg"
-    },
-    {
-        "id": 14,
-        "nombre": "Bitcoin 02",
-        "precio": 900,
-        "categoria": "Criptomonedas",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "bitcoin2.jpg"
-    },
-    {
-        "id": 15,
-        "nombre": "Ethereum",
-        "precio": 900,
-        "categoria": "Criptomonedas",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "ethereum.jpg"
-    },
-    {
-        "id": 16,
-        "nombre": "Twin Peaks 01",
-        "precio": 900,
-        "categoria": "Series",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "twin1.jpg"
-    },
-    {
-        "id": 17,
-        "nombre": "Twin Peaks 01",
-        "precio": 900,
-        "categoria": "Series",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "twin2.jpg"
-    },
-    {
-        "id": 18,
-        "nombre": "Star Wars 01",
-        "precio": 900,
-        "categoria": "Películas",
-        "material": "Cerámica",
-        "descripcion": "",
-        "imagen": "darthvadder.jpg"
-    },
-    {
-        "id": 19,
-        "nombre": "Star Wars 02",
-        "precio": 1200,
-        "categoria": "Películas",
-        "material": "Mágica",
-        "descripcion": "",
-        "imagen": "yodamagica.jpg"
-    }
+ {
+  "id": 1,
+  "nombre": "The Beatles 01",
+  "precio": 900,
+  "categoria": "Música",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "beatles01.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "The Beatles 02",
+  "precio": 900,
+  "categoria": "Música",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "beatles02.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Van Gogh 01",
+  "precio": 900,
+  "categoria": "Arte",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "van-gogh-01.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Van Gogh 02",
+  "precio": 900,
+  "categoria": "Arte",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "van-gogh-02.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Harry Potter 01",
+  "precio": 900,
+  "categoria": "Películas",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "hp01.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Harry Potter 02",
+  "precio": 1200,
+  "categoria": "Películas",
+  "material": "Mágica",
+  "descripcion": "",
+  "imagen": "hp02.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "Maradona 01",
+  "precio": 900,
+  "categoria": "",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "maradona01.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "Maradona 02",
+  "precio": 900,
+  "categoria": "",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "maradona02.jpg"
+ },
+ {
+  "id": 9,
+  "nombre": "Harold",
+  "precio": 900,
+  "categoria": "Memes",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "harold-cara.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "This is Fine",
+  "precio": 900,
+  "categoria": "Memes",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "this-is-fine.jpg"
+ },
+ {
+  "id": 11,
+  "nombre": "Taylor Swift 01",
+  "precio": 900,
+  "categoria": "Música",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "taylor-folklore.jpg"
+ },
+ {
+  "id": 12,
+  "nombre": "Taylor Swift 02",
+  "precio": 900,
+  "categoria": "Música",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "taylor-lover.jpg"
+ },
+ {
+  "id": 13,
+  "nombre": "Bitcoin 01",
+  "precio": 900,
+  "categoria": "Criptomonedas",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "bitcoin1.jpg"
+ },
+ {
+  "id": 14,
+  "nombre": "Bitcoin 02",
+  "precio": 900,
+  "categoria": "Criptomonedas",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "bitcoin2.jpg"
+ },
+ {
+  "id": 15,
+  "nombre": "Ethereum",
+  "precio": 900,
+  "categoria": "Criptomonedas",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "ethereum.jpg"
+ },
+ {
+  "id": 16,
+  "nombre": "Twin Peaks 01",
+  "precio": 900,
+  "categoria": "Series",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "twin1.jpg"
+ },
+ {
+  "id": 17,
+  "nombre": "Twin Peaks 01",
+  "precio": 900,
+  "categoria": "Series",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "twin2.jpg"
+ },
+ {
+  "id": 18,
+  "nombre": "Star Wars 01",
+  "precio": 900,
+  "categoria": "Películas",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "darthvadder.jpg"
+ },
+ {
+  "id": 19,
+  "nombre": "Star Wars 02",
+  "precio": 1200,
+  "categoria": "Películas",
+  "material": "Mágica",
+  "descripcion": "",
+  "imagen": "yodamagica.jpg"
+ },
+ {
+  "id": 20
+ },
+ {
+  "id": 21
+ },
+ {
+  "id": 22
+ },
+ {
+  "id": 23
+ },
+ {
+  "id": 24
+ }
 ]

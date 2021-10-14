@@ -34,25 +34,26 @@ const controller = {
 	// (get) Create - Formulario para crear
     
 	crear: (req, res) => {  
-		res.render("product-create-form.ejs"); //***SIN COMPLETAR TODAVIA***
+		res.render("product-create-form.ejs"); 
 	},
 	
 	// (post) Create - Método para guardar la info
 	store: (req, res) => {
+		console.log(req.body)
 		const newProduct = {
-			id: products[products.length - 1].id +1,
-			name: req.body.name,
-			price: req.body.price,
-			discount: req.body.discount,
-			category: req.body.category,
-			description: req.body.description,
+			id: tazas[tazas.length - 1].id +1,
+			nombre: req.body.nombre,
+			precio: req.body.precio,
+			categoria: req.body.categoria,
+			material: req.body.material,
+			descripcion: req.body.descripcion,
 			/* ...req.body, */
-			image: req.file.filename
 		}
-		products.push(newProduct);
+		
+		tazas.push(newProduct);
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-		res.redirect("/");
+		fs.writeFileSync(productsFilePath, JSON.stringify(tazas, null, " "));
+		res.redirect("/productos");
 	},
 
 	// (get) Update - Formulario para editar
