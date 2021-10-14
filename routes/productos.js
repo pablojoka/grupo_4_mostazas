@@ -35,14 +35,14 @@ router.get('/detalle/:id/', productosController.detalle);
 
 router.get('/crear/', productosController.crear); 
 router.post('/',  productosController.store);
-
+/*
 // Editar un producto 
 router.get('/editar/:id', productosController.editar); 
 router.put('/:id', upload.single("image"), productosController.subir);
 
 // Eliminar un producto 
 router.eliminar('/:id', productosController.eliminar);
-
+*/
 module.exports = router;
 
 
