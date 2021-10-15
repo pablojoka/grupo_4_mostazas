@@ -42,12 +42,12 @@ const controller = {
 		console.log(req.body)
 		const newProduct = {
 			id: tazas[tazas.length - 1].id +1,
-			nombre: req.body.nombre,
+			/*nombre: req.body.nombre,
 			precio: req.body.precio,
 			categoria: req.body.categoria,
 			material: req.body.material,
-			descripcion: req.body.descripcion,
-			/* ...req.body, */
+			descripcion: req.body.descripcion,*/
+			 ...req.body, 
 		}
 		
 		tazas.push(newProduct);
