@@ -34,7 +34,7 @@ router.get('/detalle/:id/', productosController.detalle);
 // Crear un producto
 
 router.get('/crear/', productosController.crear); 
-router.post('/productos',/*upload.single("image")*/  productosController.store);
+router.post('/',/*upload.single("image")*/  productosController.store);
 
  //Editar un producto 
 router.get('/editar/:id', productosController.editar); 

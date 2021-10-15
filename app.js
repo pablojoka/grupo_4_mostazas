@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
-app.use(express.urlencoded({ extended: false })); // Para poder leer el body
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json()); // Para poder leer el body
 app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
 
