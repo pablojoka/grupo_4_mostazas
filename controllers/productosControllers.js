@@ -59,46 +59,39 @@ const controller = {
 	// (get) Update - Formulario para editar
 	editar: (req, res) => {
 		const id = req.params.id;
-		const product = products.find(product => {
+		const product = tazas.find(product => {
 			return product.id == id
 		})
 
-		res.render("product-edit-form", { //***EEEEEEEEEEEE***
-			product: product
-		})
+		res.render("product-edit-form", {product: product})
 	},
-/*
+
 	// (post) Update - Método para actualizar la info
 	subir: (req, res) => {
 		const id = req.params.id;
-		let productToEdit = products.find(product => product.id == id);
+		let productToEdit = tazas.find(product => product.id == id);
 		
 		productToEdit = {
 			id: productToEdit.id,
-			name: req.body.name,
-			price: req.body.price,
-			discount: req.body.discount,
-			category: req.body.category,
-			description: req.body.description,
-			/* ...req.body, */
-		/*	image: req.file ? req.file.filename : productToEdit.image
+			...req.body, 
+			image: req.file ? req.file.filename : productToEdit.image
 		}
 
-		let newProducts = products;
 		newProducts[id-1] = productToEdit;
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
-		res.redirect("/")
+		fs.writeFileSync(productsFilePath, JSON.stringify(tazas, null, " "));
+		res.redirect("/productos")
 	},
 
 	// (delete) Delete - Eliminar un producto de la DB
-	eliminar : (req, res) => {
-		const id = req.params.id;
-		let finalProducts = products.filter(product => product.id != id);
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-		res.redirect("/")
-	}*/
+	    eliminar : (req, res) => {
+		let id = req.params.id;
+		let productosFinales = tazas.filter(taza=>{
+			return id != taza.id
+		})
+		fs.writeFileSync(productsFilePath, JSON.stringify(productosFinales, null, " "))//se le pone null y comillas con espacio para que en el JSON quede uno elemento abajo
+		res.redirect("/productos")
+	}
 };
 
 module.exports = controller;
