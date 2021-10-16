@@ -1,14 +1,5 @@
 [
  {
-  "id": 1,
-  "nombre": "The Beatles 01",
-  "precio": 900,
-  "categoria": "Música",
-  "material": "Cerámica",
-  "descripcion": "",
-  "imagen": "beatles01.jpg"
- },
- {
   "id": 2,
   "nombre": "The Beatles 02",
   "precio": 900,
@@ -172,26 +163,5 @@
  },
  {
   "id": 20
- },
- {
-  "id": 21
- },
- {
-  "id": 22
- },
- {
-  "id": 23
- },
- {
-  "id": 24
- },
- {
-  "id": 25
- },
- {
-  "id": 26
- },
- {
-  "id": 27
  }
 ]

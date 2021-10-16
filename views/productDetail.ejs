@@ -3,126 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/c08b99bcb8.js" crossorigin="anonymous"></script>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c08b99bcb8.js" crossorigin="anonymous"></script>
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;900&display=swap" rel="stylesheet">
 
-<title>Mos Tazas | Tazas Sublimadas</title>
+
+
+    <title>Mos Tazas | Tazas Sublimadas</title>
 </head>
+
 <body>
-<%- include('./partials/header.ejs') %>
+    <%- include('./partials/header.ejs') %>
         <nav id="menu-no-mobile">
             <ul>
-                <a href="/"><li>Inicio</li></a>
-                <a href="#"><li>Categorias</li></a>
-                <a href="#"><li>Contacto</li></a>
+                <a href="/">
+                    <li>Inicio</li>
+                </a>
+                <a href="#">
+                    <li>Categorias</li>
+                </a>
+                <a href="#">
+                    <li>Contacto</li>
+                </a>
             </ul>
         </nav>
-<section id="contenedor-section">
-    <main>
-        <div id="ruta">
-            <p><a class="negro" href="/">Home</a> > Productos</p>
-    </div> 
+        <section id="contenedor-section">
+            <main>
+                <div id="ruta">
+                    <p><a class="negro" href="/">Home</a> > Productos</p>
+                </div>
 
 
 
-        <article class="product-details">
-            <div class="taza-individual-details">
-                <img src="/imagenes/<%= taza.imagen %> " alt="" class="img-producto">
-            </div>
-            <div class="product-description">
-                <h3><%= taza.nombre %></h3>
-                <p><%= taza.descripcion %></p>
-                <br>
-                <h4>Cantidad<input class="counter" type="number" name="Cantidad" list="defaultNumbers">
-                    <datalist id="defaultNumbers">
-                      <option value="1">
-                      <option value="2">
-                      <option value="3">
-                      <option value="4">
-                      <option value="5">
-                    </datalist> 
-</h4>
-<br>
-<h3 class="precio"> Precio total: $<%= taza.precio %></h3>
-<div id="product-buttons">
-    <button class="glow-on-hover"  type="submit">Agregar al Carrito</button>
-<br>
-<button class="glow-on-hover"  type="submit">Finalizar compra
-</div>
+                <article class="product-details">
+                    <div class="taza-individual-details">
+                        <img src="/imagenes/<%= taza.imagen %> " alt="" class="img-producto">
+                    </div>
+                    <div class="product-description">
+                        <h3>
+                            <%= taza.nombre %>
+                        </h3>
+                        <p>
+                            <%= taza.descripcion %>
+                        </p>
+                        <br>
+                        <h4>Cantidad<input class="counter" type="number" name="Cantidad" list="defaultNumbers">
+                            <datalist id="defaultNumbers">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                            </datalist>
+                        </h4>
+                        <br>
+                        <h3 class="precio"> Precio total: $<%= taza.precio %>
+                        </h3>
+                        <div id="product-buttons">
+                            <button class="glow-on-hover" type="submit">Agregar al Carrito</button>
+                            <br>
+                            <button class="glow-on-hover" type="submit">Finalizar compra
+                        </div>
+                        <a href="/productos/delete/<%= taza.id %>" class="boton-edicion">Editar Producto</a>
+                        <form action="/productos/delete/<%= taza.id %> ?_method=DELETE" method="post" style="display: inline-flex;">
+                            <button type="submit" class="boton-delete">Eliminar Producto</button>
+                        </form>
+                    </div>
+                </article>
 
-</div>
-</article>
 
 
-    
-</main>
-<section id="related-products">
-    <h1>Productos Relacionados</h1>
+            </main>
+            <section id="related-products">
+                <h1>Productos Relacionados</h1>
 
-    <article>
-        <div class="taza-individual">
-            <img src="https://d22fxaf9t8d39k.cloudfront.net/368766129c6645593098c8d0340d83ade1bcc3592aa82df5026ebb1c84cf0b7279300.jpeg" alt="" class="img-producto">
-            <i class="fas fa-truck"></i>
-            <p class="precio">$850</p>
-            <h4>Taza 01</h4>
-        </div>
-    </article>
-    <article>
-        <div class="taza-individual">
-            <img src="https://d22fxaf9t8d39k.cloudfront.net/213acdddf8ca368b4d32014162409d502a31fb64f507592c1d4fd22065f59cfd79300.jpeg" alt="" class="img-producto">
-            <i class="fas fa-truck"></i>
-            <p class="precio">$850</p>
-            <h4>Taza 02</h4>
-        </div>
-    </article>
-    <article>
-        <div class="taza-individual">
-            <img src="https://d22fxaf9t8d39k.cloudfront.net/c4e8235ca027cdc387dea5e64e718a4989708c3a51bcdfd9661e6f3f06879f0479300.jpeg" alt="" class="img-producto">
-            <i class="fas fa-truck"></i>
-            <p class="precio">$850</p>
-            <h4>Taza 02</h4>
-        </div>
-    </article>
-    <article>
-        <div class="taza-individual">
-            <img src="https://d22fxaf9t8d39k.cloudfront.net/fd1531139f494abc9c1596c054ef1065936545bfe1c348b644e8dae70d97e7e379300.jpeg" alt="" class="img-producto">
-            <i class="fas fa-truck"></i>
-            <p class="precio">$850</p>
-            <h4>Taza 02</h4>
-        </div>
-    </article>
-</section>
-</section>
-<section class="other-buttons"> 
-    <p class="see-more-button"><a href="#">Ver mas</a></p>
-    <p class="checkout-button"><a href="#">Finalizar Compra</a></p>
-    <a href="/products/edit/<%= tazas.id %> " class="action-button edit">ELIMINAR PRODUCTO</a>
-    <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-        <button type="submit" class="action-button delete">ELIMINAR</button>
-    </form>
-</section>
-<%- include('./partials/barra-extra.ejs') %>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/368766129c6645593098c8d0340d83ade1bcc3592aa82df5026ebb1c84cf0b7279300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 01</h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/213acdddf8ca368b4d32014162409d502a31fb64f507592c1d4fd22065f59cfd79300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/c4e8235ca027cdc387dea5e64e718a4989708c3a51bcdfd9661e6f3f06879f0479300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/fd1531139f494abc9c1596c054ef1065936545bfe1c348b644e8dae70d97e7e379300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="other-buttons">
+            <p class="see-more-button"><a href="#">Ver mas</a></p>
+            <p class="checkout-button"><a href="#">Finalizar Compra</a></p>
 
-        <footer>
-            <div id="contenedor-footer">
+
+
+
+        </section>
+        <%- include('./partials/barra-extra.ejs') %>
+
+            <footer>
+                <div id="contenedor-footer">
                     <img class="logo-footer" src="/imagenes/logo.png" alt="">
-                
+
                     <img class="redes" src="/imagenes/ig.png" alt="">
-        
-            </div>    
-        </footer>
+
+                </div>
+            </footer>
 </body>
+
 </html>
