@@ -126,15 +126,6 @@
   "imagen": "ethereum.jpg"
  },
  {
-  "id": 16,
-  "nombre": "Twin Peaks 01",
-  "precio": 900,
-  "categoria": "Series",
-  "material": "Cerámica",
-  "descripcion": "",
-  "imagen": "twin1.jpg"
- },
- {
   "id": 17,
   "nombre": "Twin Peaks 01",
   "precio": 900,
