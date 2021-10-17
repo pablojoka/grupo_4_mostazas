@@ -46,7 +46,7 @@ const controller = {
 			categoria: req.body.categoria,
 			material: req.body.material,
 			descripcion: req.body.descripcion,
-			 ...req.body, 
+			/* ...req.body,*/ 
 		}
 		
 		tazas.push(newProduct);
