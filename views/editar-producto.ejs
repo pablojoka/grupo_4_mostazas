@@ -26,18 +26,18 @@
             <article id="login-registro">
                 <h2>Editar Producto</h2><br>
 
-                    <form action="/productos/edit/<%= taza.id %>?_method=PUT" method="PUT"></form>
+                    <form action="/productos/edit/<%= tazas.id %>?_method=PUT" method="PUT"></form>
                             
                     <label for="nombre" class="form-label">Nombre del producto:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="<%= taza.nombre %>" class="form-input">
+                    <input type="text" id="nombre" name="nombre" placeholder="<%= tazas.nombre %>" class="form-input">
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="precio" class="form-label">Precio del producto:</label>
-                    <input type="text" id="precio" name="precio" placeholder="<%= taza.precio %>" class="form-input">
+                    <input type="text" id="precio" name="precio" placeholder="<%= tazas.precio %>" class="form-input">
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="Descuento" class="form-label">Descuento:</label>
-                    <input type="text" id="Descuento" name="Descuento" placeholder="<%= taza.Descuento %>" class="form-input">
+                    <input type="text" id="Descuento" name="Descuento" placeholder="<%= tazas.Descuento %>" class="form-input">
                 </div>
                 <div class="col-12 col-md-6">
                     <label for="categoria" class="form-label">Categoría:</label>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-12">
                     <label for="descripción" class="form-label">Descripción:</label>
-                    <textarea name="descripción" id="descripción" class="form-input"><%= Taza.description %></textarea>
+                    <textarea name="descripción" id="descripción" class="form-input"><%= tazas.description %></textarea>
                 </div>
                 <div class="col-12">
                     <button type="submit" class="buy-now-button">Guardar producto</button>

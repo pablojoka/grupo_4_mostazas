@@ -39,14 +39,13 @@ const controller = {
 	
 	// (post) Create - Método para guardar la info
 	store: (req, res) => {
-		console.log(req.body)
 		const newProduct = {
 			id: tazas[tazas.length - 1].id +1,
-			/*nombre: req.body.nombre,
+			nombre: req.body.nombre,
 			precio: req.body.precio,
 			categoria: req.body.categoria,
 			material: req.body.material,
-			descripcion: req.body.descripcion,*/
+			descripcion: req.body.descripcion,
 			 ...req.body, 
 		}
 		
@@ -59,11 +58,13 @@ const controller = {
 	// (get) Update - Formulario para editar
 	editar: (req, res) => {
 		const id = req.params.id;
-		const product = tazas.find(product => {
-			return product.id == id
+		const product = tazas.find(taza => {
+			return taza.id == id
 		})
 
-		res.render("product-edit-form", {product: product})
+		res.render("editar-producto", {
+			taza: tazas
+		})
 	},
 
 	// (post) Update - Método para actualizar la info
