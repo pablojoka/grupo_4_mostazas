@@ -99,15 +99,6 @@
   "imagen": "taylor-lover.jpg"
  },
  {
-  "id": 13,
-  "nombre": "Bitcoin 01",
-  "precio": 900,
-  "categoria": "Criptomonedas",
-  "material": "Cerámica",
-  "descripcion": "",
-  "imagen": "bitcoin1.jpg"
- },
- {
   "id": 14,
   "nombre": "Bitcoin 02",
   "precio": 900,
@@ -154,5 +145,11 @@
  },
  {
   "id": 20
+ },
+ {
+  "id": 21
+ },
+ {
+  "id": 22
  }
 ]
