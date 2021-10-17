@@ -70,7 +70,7 @@ const controller = {
 	// (post) Update - Método para actualizar la info
 	subir: (req, res) => {
 		const id = req.params.id;
-		let productToEdit = tazas.find(product => product.id == id);
+		let productToEdit = tazas.find(taza => taza.id == id);
 		
 		productToEdit = {
 			id: productToEdit.id,
