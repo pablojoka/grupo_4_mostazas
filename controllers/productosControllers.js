@@ -62,7 +62,7 @@ const controller = {
 		const product = tazas.find(taza => {
 			return taza.id == id
 		})
-		console.log(product)
+	
 		res.render("editar-producto", {
 			taza: product
 		})
@@ -76,12 +76,17 @@ const controller = {
 		productToEdit = {
 			id: productToEdit.id,
 			...req.body, 
-			image: req.file ? req.file.filename : productToEdit.image
+			imagen: req.file ? req.file.filename : productToEdit.imagen
 		}
+		let tazaEditada= tazas;
+		tazas.forEach( (taza, index) => {
+			if(taza.id== id){
+				tazaEditada[index]=productToEdit
+			}
+			
+		});
 
-		newProducts[id-1] = productToEdit;
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(tazas, null, " "));
+		fs.writeFileSync(productsFilePath, JSON.stringify(tazaEditada, null, " "));
 		res.redirect("/productos")
 	},
 
