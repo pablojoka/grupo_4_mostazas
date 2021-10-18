@@ -142,5 +142,11 @@
   "material": "Mágica",
   "descripcion": "",
   "imagen": "yodamagica.jpg"
+ },
+ {
+  "id": 20,
+  "nombre": "Taza de Prueba",
+  "precio": "900",
+  "descripcion": "taza de ceramica"
  }
 ]
