@@ -39,6 +39,7 @@ const controller = {
 	
 	// (post) Create - Método para guardar la info
 	store: (req, res) => {
+		console.log(req.body);
 		const newProduct = {
 			id: tazas[tazas.length - 1].id +1,
 			nombre: req.body.nombre,
@@ -61,9 +62,9 @@ const controller = {
 		const product = tazas.find(taza => {
 			return taza.id == id
 		})
-
+		console.log(product)
 		res.render("editar-producto", {
-			taza: tazas
+			taza: product
 		})
 	},
 

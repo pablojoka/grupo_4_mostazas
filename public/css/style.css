@@ -552,9 +552,10 @@ INICIO SECTION "contenedor productos carrito" // CARRITO
     margin: 0%;
     border: none;
 }
-#boton-editar{
+.boton-edicion{
+    color: #000000;
     background-color: #000000;
-
+ 
 }
 
 /*

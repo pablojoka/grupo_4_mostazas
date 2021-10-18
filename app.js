@@ -4,10 +4,11 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const methodOverride = require('method-override'); //agregue este requerimiento para poder usar el put y el delete a futuro
+const multer = require('multer');
 
 /**********express *******/
 app.use(express.static('public'));
-
+app.use(multer().array())
 
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
