@@ -142,5 +142,14 @@
   "material": "Cerámica",
   "descripcion": "",
   "imagen": "darthvadder.jpg"
+ },
+ {
+  "id": 19,
+  "nombre": "Star Wars 02",
+  "precio": 1200,
+  "categoria": "Películas",
+  "material": "Mágica",
+  "descripcion": "",
+  "imagen": "yodamagica.jpg"
  }
 ]
