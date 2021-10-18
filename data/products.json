@@ -1,22 +1,22 @@
 [
- {
-  "id": 1,
-  "nombre": "The Beatles 01",
-  "precio": 900,
-  "categoria": "Música",
-  "material": "Cerámica",
-  "descripcion": "",
-  "imagen": "beatles01.jpg"
- },
- {
-  "id": 2,
-  "nombre": "The Beatles 02",
-  "precio": 900,
-  "categoria": "Música",
-  "material": "Cerámica",
-  "descripcion": "",
-  "imagen": "beatles02.jpg"
- },
+    {
+    "id": 1,
+    "nombre": "The Beatles 01",
+    "precio": 900,
+    "categoria": "Música",
+    "material": "Cerámica",
+    "descripcion": "",
+    "imagen": "beatles01.jpg"
+},
+{
+    "id": 2,
+    "nombre": "The Beatles 02",
+    "precio": 900,
+    "categoria": "Música",
+    "material": "Cerámica",
+    "descripcion": "",
+    "imagen": "beatles02.jpg"
+},
  {
   "id": 3,
   "nombre": "Van Gogh 01",
