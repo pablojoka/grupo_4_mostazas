@@ -2,7 +2,21 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/links-y-meta.ejs') %>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/c08b99bcb8.js" crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;900&display=swap" rel="stylesheet">
+
 
 <title>Mos Tazas | Tazas Sublimadas</title>
 </head>
@@ -30,7 +44,6 @@
                             
                     <label for="nombre" class="form-label">Nombre del producto:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="<%= taza.nombre %>" class="form-input">
-                </div>
                 <div class="col-12 col-md-6">
                     <label for="precio" class="form-label">Precio del producto:</label>
                     <input type="text" id="precio" name="precio" placeholder="<%= taza.precio %>" class="form-input">
@@ -61,8 +74,14 @@
         </section>
 
        
-        <%- include('./partials/footer.ejs') %>
-
+        <footer>
+            <div id="contenedor-footer">
+                    <img class="logo-footer" src="/imagenes/logo.png" alt="">
+                
+                    <img class="redes" src="/imagenes/ig.png" alt="">
+        
+            </div>    
+        </footer>
     </div>
 </body>
 
