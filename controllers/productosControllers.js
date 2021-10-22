@@ -34,7 +34,7 @@ const controller = {
 	// (get) Create - Formulario para crear
     
 	crear: (req, res) => {  
-		res.render("product-create-form.ejs"); 
+		res.render("crear-producto.ejs"); 
 	},
 	
 	// (post) Create - Método para guardar la info
@@ -49,7 +49,7 @@ const controller = {
 			descripcion: req.body.descripcion,
 			/* ...req.body,*/ 
 		}
-		
+
 		tazas.push(newProduct);
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(tazas, null, " "));
@@ -79,12 +79,15 @@ const controller = {
 			imagen: req.file ? req.file.filename : productToEdit.imagen
 		}
 		let tazaEditada= tazas;
-		tazas.forEach( (taza, index) => {
+		/*tazas.forEach( (taza, index) => {
 			if(taza.id== id){
 				tazaEditada[index]=productToEdit
 			}
 			
-		});
+		});*/
+
+		//BORRAR ESTO DE ABAJO SI NO FUNCIONA
+		tazaEditada[id-1]= productToEdit;
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(tazaEditada, null, " "));
 		res.redirect("/productos")

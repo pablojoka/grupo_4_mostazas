@@ -1,10 +1,47 @@
 [
+    {
+    "id": 1,
+    "nombre": "The Beatles 01",
+    "precio": 900,
+    "categoria": "Música",
+    "material": "Cerámica",
+    "descripcion": "",
+    "imagen": "beatles01.jpg"
+},
+{
+    "id": 2,
+    "nombre": "The Beatles 02",
+    "precio": 900,
+    "categoria": "Música",
+    "material": "Cerámica",
+    "descripcion": "",
+    "imagen": "beatles02.jpg"
+},
  {
-  "id": 2,
-  "imagen": "beatles02.jpg"
+  "id": 3,
+  "nombre": "Van Gogh 01",
+  "precio": 900,
+  "categoria": "Arte",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "van-gogh-01.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Van Gogh 02",
+  "precio": 900,
+  "categoria": "Arte",
+  "material": "Cerámica",
+  "descripcion": "",
+  "imagen": "van-gogh-02.jpg"
  },
  {
   "id": 5,
+  "nombre": "Harry Potter 01",
+  "precio": 900,
+  "categoria": "Películas",
+  "material": "Cerámica",
+  "descripcion": "",
   "imagen": "hp01.jpg"
  },
  {
@@ -108,13 +145,11 @@
  },
  {
   "id": 19,
+  "nombre": "Star Wars 02",
+  "precio": 1200,
+  "categoria": "Películas",
+  "material": "Mágica",
+  "descripcion": "",
   "imagen": "yodamagica.jpg"
- },
- {
-  "id": 20,
-  "nombre": "prueba de taza 5",
-  "precio": "1000",
-  "descripcion": "taza de prueba"
  }
-
 ]
