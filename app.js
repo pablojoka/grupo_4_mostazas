@@ -22,9 +22,11 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ Route System require and use() - (don't touch) ************
 const mainRouter = require('./routes/main'); // Rutas main
 const productsRouter = require('./routes/productos'); // Rutas /productos
+const userRouter = require('./routes/usuarios'); //Rutas Usuarios
 
 app.use('/', mainRouter);
 app.use('/productos', productsRouter);
+app.use('/usuario', userRouter);
 
 app.listen(4000, ()=>{
     console.log('Servidor corriendo en http://localhost:4000/');

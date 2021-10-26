@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre" : "Pepito Cibrian",
+        "email": "pepito@gmail.com",
+        "contraseña": "1234pepito",
+        "avatar": "harold-cara.jpg"
+    },
+    {
+        "id": 2,
+        "nombre" : "Jaime Cibrian",
+        "email": "pepi@gmail.com",
+        "contraseña": "lalala10",
+        "avatar": "bitcoin1.jpg"
+    }
+]
