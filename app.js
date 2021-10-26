@@ -1,11 +1,10 @@
  /**********requires *********/
-
 const express = require('express');
-const app = express();
 const path = require('path')
 const methodOverride = require('method-override'); //agregue este requerimiento para poder usar el put y el delete a futuro
 
 /**********express *******/
+const app = express();
 app.use(express.static('public'));
 
 // ************ Middlewares - (don't touch) ************

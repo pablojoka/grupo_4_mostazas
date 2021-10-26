@@ -34,11 +34,11 @@ router.get('/detalle/:id/', productosController.detalle);
 // Crear un producto
 
 router.get('/crear/', productosController.crear); 
-router.post('/',upload.single("imagenes"),  productosController.store);
+router.post('/',upload.single("imagen"),  productosController.store);
 
  //Editar un producto 
 router.get('/editar/:id', productosController.editar); 
-router.post('/editar/:id', upload.single("imagenes"), productosController.subir);
+router.post('/editar/:id', upload.single("imagen"), productosController.subir);
 
 // Eliminar un producto 
 router.delete('/delete/:id', productosController.eliminar);

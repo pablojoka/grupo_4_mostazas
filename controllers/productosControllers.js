@@ -6,12 +6,6 @@ guardados en la carpeta Data como Json (un array de objetos literales) */
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const tazas = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-/* La constante "toThousand" deben enviarla como parametro en el res.render,
-les ayudará para mostrar el precio final adecuadamente con 
-una cantidad de decimales fija. Es una función, solamente deben poner
-como parámetro el precio final (en el archivo ejs): toThousand(finalPrice)*/
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
 const controller = {
 	// (get) Root - Mostrar todos los productos
 	index: (req, res) => {
@@ -47,6 +41,7 @@ const controller = {
 			categoria: req.body.categoria,
 			material: req.body.material,
 			descripcion: req.body.descripcion,
+			imagen: req.file.filename 
 			/* ...req.body,*/ 
 		}
 
@@ -79,15 +74,14 @@ const controller = {
 			imagen: req.file ? req.file.filename : productToEdit.imagen
 		}
 		let tazaEditada= tazas;
-		/*tazas.forEach( (taza, index) => {
+		tazas.forEach( (taza, index) => {
 			if(taza.id== id){
 				tazaEditada[index]=productToEdit
 			}
 			
-		});*/
+		});
 
-		//BORRAR ESTO DE ABAJO SI NO FUNCIONA
-		tazaEditada[id-1]= productToEdit;
+		
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(tazaEditada, null, " "));
 		res.redirect("/productos")
