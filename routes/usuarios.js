@@ -1,6 +1,19 @@
-const express = require ('express');
+const express = require('express');
 const router = express.Router();
 
+const path = require('path')
+const multer = require('multer')
+
+const storage= multer.diskStorage({
+    destination: (req,res,cb)=>{
+        cb(null, '../public/imagenes/avatars');
+    },
+    filename:(req,res,cb)=>{
+        let fileName = `${Date.now()}_img${path.extname(file.fileName)}`;
+        cb(null,)
+    },
+})
+const uploadFile= multer ({storage})
 //Controller
 const usersController = require('../controllers/usuariosController');
 
