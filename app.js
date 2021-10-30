@@ -2,11 +2,12 @@
 const express = require('express');
 const path = require('path')
 const methodOverride = require('method-override'); //agregue este requerimiento para poder usar el put y el delete a futuro
-
+const {validationResult} = require ('express-validator');
+const multer  = require('multer')
 /**********express *******/
 const app = express();
 app.use(express.static('public'));
-
+app.use(validationResult)
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));

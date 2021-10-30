@@ -1,5 +1,5 @@
 const {validationResult} = require ('express-validator');
-
+const User = require('../models/User')
 const controller = {
     register: (req,res) => {
         return res.render('userRegisterForm');
