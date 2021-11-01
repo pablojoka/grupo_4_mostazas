@@ -20,6 +20,7 @@
             </ul>
         </nav>
         <section id="contenedor-section">
+        
         <div id="ruta">
                 <p><a class="negro" href="/">Home</a> > Crear Cuenta</p>
         </div>    
@@ -28,23 +29,84 @@
                 <h2>¿No tenés cuenta?</g2>
                     <h2>Completá el formulario para crear tu cuenta</h2>
 
-                    <form class="form-login-registro" action="/usuarios.js/register" enctype="multipart/form-data">
+                    <form class="form-login-registro" action="/usuarios.js/register" enctype="multipart/form-data" >
                         <div class="cincuenta">
                             <label class="marg5px" for="email">Correo Electronico</label>
-                            <input class="marg5px" type="email" name="email" id="email">
+                            <input
+                             type="email" 
+                             name="email"
+                             class="marg5px <%= locals.errors && errors.email ? 'is-invalid' : null  %> "
+                             value="<%= locals.oldData ? oldData.email : null %> "
+                            > 
+                            <% if (locals.errors && errors.email) { %>
+                             <div class = 'text-danger'>
+                                 <%=  errors.email.msg %> 
+                             </div>
+                            <% } %>
                             <br>
                             <label class="marg5px" for="nuevo-usuario">Nombre de usuario</label>
-                            <input class="marg5px" type="text" name="usuario" id="nuevo-usuario"><br>
-                            <label class="marg5px" for="nombre-y-apellido">Nombre Completo</label>
-                            <input class="marg5px" type="text" name="nombre-y-apellido" id="nombre-y-apellido"><br>
+                            <input 
+                            type="text" 
+                            name="usuario"
+                            class="marg5px <%= locals.errors && errors.usuario ? 'is-invalid' : null  %>"
+                            value="<%= locals.oldData ? oldData.usuario : null %> "
+                            ><br>
+                            <% if (locals.errors && errors.usuario) { %>
+                                <div class = 'text-danger'>
+                                    <%=  errors.usuario.msg %> 
+                                </div>
+                               <% } %>
+                            <label class="marg5px" for="fullName">Nombre Completo</label>
+                            <input 
+                            type="text" 
+                            name="fullName"
+                            class="marg5px <%= locals.errors && errors.fullName ? 'is-invalid' : null  %>" 
+                            value="<%= locals.oldData ? oldData.fullName : null %> "
+                            ><br>
+                            <% if (locals.errors && errors.fullName) { %>
+                                <div class = 'text-danger'>
+                                    <%=  errors.fullName.msg %> 
+                                </div>
+                               <% } %>
                         </div>
                         
                         <div class="cincuenta">
                             <label class="marg5px" for="nueva-contraseña">Contraseña</label>
-                            <input class="marg5px" type="password" name="contraseña" id="nueva-contraseña">
+                            <input 
+                            type="password" 
+                            name="contraseña" 
+                            class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid' : null  %>"
+                            value="<%= locals.oldData ? oldData.contraseña : null %> "
+                            > 
+                              <% if (locals.errors && errors.contraseña) { %>
+                                <div class = 'text-danger'>
+                                    <%=  errors.contraseña.msg %> 
+                                </div>
+                               <% } %>
                         <br>
                             <label class="marg5px" for="nueva-contraseña2">Repetir Contraseña</label>
-                            <input class="marg5px" type="password" name="contraseña2" id="nueva-contraseña2">
+                            <input 
+                            type="password" 
+                            name="contraseña2" 
+                            class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' : null  %>"
+                            value="<%= locals.oldData ? oldData.contraseña2 : null %> "
+                            >
+                            <% if (locals.errors && errors.contraseña2) { %>
+                                <div class = 'text-danger'>
+                                    <%=  errors.contraseña2.msg %> 
+                                </div>
+                               <% } %>
+                            <label><b> Imagen de perfil:</b></label>
+                        <input
+                         class="form-control" 
+                         type="file" 
+                         name="avatar">
+                         <% if (locals.errors && errors.avatar) { %>
+                            <div class = 'text-danger'>
+                                <%=  errors.avatar.msg %> 
+                            </div>
+                           <% } %>
+
                         </div>    
                         <button class="glow-on-hover"  type="submit">Registrarse</button>
 
