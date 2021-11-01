@@ -54,6 +54,6 @@ router.post('/register', uploadFile.single('avatar'), validations, validations ,
 router.get('/login', usersController.login);
 
 //Perfil de Usuario
-router.get('/perfil/:usuarioId', usersController.perfil);
+router.get('/perfil/:usuarioId', usersController.profile);
 
 module.exports = router
