@@ -14,7 +14,9 @@ const controller = {
             });
         }
 
-        return res.send('Ok, las validaciones se pasaron y no tienes errores');
+        User.crear(req.body);
+        return res.send('Ok, se guardo el usuario');
+
     },
     login: (req,res) => {
         return res.render('userLoginForm');

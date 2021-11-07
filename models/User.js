@@ -43,7 +43,7 @@ const User = {
         }
         allUsers.push(newUser);
         fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
-        return true
+        return newUser
     },
     // BORRAR UN USUARIO
     delete: function (id) {
