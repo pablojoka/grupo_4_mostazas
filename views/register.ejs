@@ -37,11 +37,11 @@
                         <form class="form-login-registro" method="POST" action="/usuario/registro" enctype="multipart/form-data">
                             <div class="cincuenta">
                                 <label ><b>Correo Electronico:</b></label>
-                                <input  
+                                <input 
                                 type="email"
                                 name="email"
                                 class="marg5px <%= locals.errors && errors.email ? 'is-invalid' : null  %> "
-                                value="<%= locals.oldData ? oldData.email : null %> ">
+                                value="<%= locals.oldData ? oldData.email :null%>">
                                     <% if (locals.errors && errors.email) { %>
                                     <div class='text-danger'>
                                          <%= errors.email.msg %>
@@ -78,8 +78,8 @@
                                 <input 
                                       type="password" 
                                       name="contraseña"
-                                      class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid' : null  %>"
-                                      value="<%= locals.oldData ? oldData.contraseña : null %> ">
+                                      class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid': null  %>"
+                                      value="<%= locals.oldData ? oldData.contraseña : null %>">
                                                <% if (locals.errors && errors.contraseña) { %>
                                                    <div class='text-danger'>
                                                      <%= errors.contraseña.msg %>
@@ -89,8 +89,8 @@
                                 <label ><b>Repetir Contraseña</b></label>
                                 <input 
                                       type="password" name="contraseña2"
-                                      class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' : null  %>"
-                                      value="<%= locals.oldData ? oldData.contraseña2 : null %> ">
+                                      class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' :null%>"
+                                      value="<%= locals.oldData ? oldData.contraseña2 : null %>">
                                                 <% if (locals.errors && errors.contraseña2) { %>
                                                     <div class='text-danger'>
                                                       <%= errors.contraseña2.msg %>
