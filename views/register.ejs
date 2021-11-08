@@ -53,7 +53,7 @@
                                       type="text"
                                       name="usuario"
                                       class="marg5px <%= locals.errors && errors.usuario ? 'is-invalid' : null  %>"
-                                      value="<%= locals.oldData ? oldData.usuario : null %> ">
+                                      value="<%= locals.oldData ? oldData.usuario : null %>">
                                                 <% if (locals.errors && errors.usuario) { %>
                                                     <div class='text-danger'>
                                                         <%= errors.usuario.msg %>
@@ -64,8 +64,8 @@
                                 <input 
                                       type="text" 
                                       name="fullName"
-                                      class="marg5px <%= locals.errors && errors.fullName ? 'is-invalid' : null  %>"
-                                      value="<%= locals.oldData ? oldData.fullName : null %> ">
+                                      class="marg5px <%= locals.errors && errors.fullName ?'is-invalid' : null  %>"
+                                      value="<%= locals.oldData ? oldData.fullName : null %>">
                                                 <% if (locals.errors && errors.fullName) { %>
                                                     <div class='text-danger'>
                                                       <%= errors.fullName.msg %>
