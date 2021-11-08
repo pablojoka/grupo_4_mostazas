@@ -5,166 +5,170 @@
     <%- include('./partials/links-y-meta.ejs') %>
 
 
-<title>Mos Tazas | Tazas Sublimadas</title>
+        <title>Mos Tazas | Tazas Sublimadas</title>
 </head>
 
 <body>
 
     <div id="contenedor-global">
-    <%- include('./partials/header.ejs') %>
-        <nav id="menu-no-mobile">
-            <ul>
-                <a href="/"><li>Inicio</li></a>
-                <a href="#"><li>Categorias</li></a>
-                <a href="#"><li>Contacto</li></a>
-            </ul>
-        </nav>
-        <section id="contenedor-section">
-        
-        <div id="ruta">
-                <p><a class="negro" href="/">Home</a> > Crear Cuenta</p>
-        </div>    
-           
-            <article id="login-registro">
-                <h2>¿No tenés cuenta?</g2>
-                    <h2>Completá el formulario para crear tu cuenta</h2>
+        <%- include('./partials/header.ejs') %>
+            <nav id="menu-no-mobile">
+                <ul>
+                    <a href="/">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="#">
+                        <li>Categorias</li>
+                    </a>
+                    <a href="#">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+            <section id="contenedor-section">
+                <div id="ruta">
+                    <p><a class="negro" href="/"><b>Volver al Inicio</b></a> > <b> Crear Cuenta</b></p>
+                </div>
 
-                    <form class="form-login-registro" action="/usuarios.js/register" enctype="multipart/form-data" >
-                        <div class="cincuenta">
-                            <label class="marg5px" for="email">Correo Electronico</label>
-                            <input
-                             type="email" 
-                             name="email"
-                             class="marg5px <%= locals.errors && errors.email ? 'is-invalid' : null  %> "
-                             value="<%= locals.oldData ? oldData.email : null %> "
-                            > 
-                            <% if (locals.errors && errors.email) { %>
-                             <div class = 'text-danger'>
-                                 <%=  errors.email.msg %> 
-                             </div>
-                            <% } %>
-                            <br>
-                            <label class="marg5px" for="nuevo-usuario">Nombre de usuario</label>
-                            <input 
-                            type="text" 
-                            name="usuario"
-                            class="marg5px <%= locals.errors && errors.usuario ? 'is-invalid' : null  %>"
-                            value="<%= locals.oldData ? oldData.usuario : null %> "
-                            ><br>
-                            <% if (locals.errors && errors.usuario) { %>
-                                <div class = 'text-danger'>
-                                    <%=  errors.usuario.msg %> 
-                                </div>
-                               <% } %>
-                            <label class="marg5px" for="fullName">Nombre Completo</label>
-                            <input 
-                            type="text" 
-                            name="fullName"
-                            class="marg5px <%= locals.errors && errors.fullName ? 'is-invalid' : null  %>" 
-                            value="<%= locals.oldData ? oldData.fullName : null %> "
-                            ><br>
-                            <% if (locals.errors && errors.fullName) { %>
-                                <div class = 'text-danger'>
-                                    <%=  errors.fullName.msg %> 
-                                </div>
-                               <% } %>
-                        </div>
-                        
-                        <div class="cincuenta">
-                            <label class="marg5px" for="nueva-contraseña">Contraseña</label>
-                            <input 
-                            type="password" 
-                            name="contraseña" 
-                            class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid' : null  %>"
-                            value="<%= locals.oldData ? oldData.contraseña : null %> "
-                            > 
-                              <% if (locals.errors && errors.contraseña) { %>
-                                <div class = 'text-danger'>
-                                    <%=  errors.contraseña.msg %> 
-                                </div>
-                               <% } %>
-                        <br>
-                            <label class="marg5px" for="nueva-contraseña2">Repetir Contraseña</label>
-                            <input 
-                            type="password" 
-                            name="contraseña2" 
-                            class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' : null  %>"
-                            value="<%= locals.oldData ? oldData.contraseña2 : null %> "
-                            >
-                            <% if (locals.errors && errors.contraseña2) { %>
-                                <div class = 'text-danger'>
-                                    <%=  errors.contraseña2.msg %> 
-                                </div>
-                               <% } %>
-                            <label><b> Imagen de perfil:</b></label>
-                        <input
-                         class="form-control" 
-                         type="file" 
-                         name="avatar">
-                         <% if (locals.errors && errors.avatar) { %>
-                            <div class = 'text-danger'>
-                                <%=  errors.avatar.msg %> 
+                <article id="login-registro">
+                    <h2>¿No tenés cuenta?</g2>
+                        <h2>Completá el formulario para crear tu cuenta</h2>
+
+                        <form class="form-login-registro" method="POST" action="/usuario/registro" enctype="multipart/form-data">
+                            <div class="cincuenta">
+                                <label ><b>Correo Electronico:</b></label>
+                                <input  
+                                type="email"
+                                name="email"
+                                class="marg5px <%= locals.errors && errors.email ? 'is-invalid' : null  %> "
+                                value="<%= locals.oldData ? oldData.email : null %> ">
+                                    <% if (locals.errors && errors.email) { %>
+                                    <div class='text-danger'>
+                                         <%= errors.email.msg %>
+                                        </div>
+                                        <% } %>
+                                            <br>
+                                <label><b>Usuario:</b></label>
+                                <input 
+                                      type="text"
+                                      name="usuario"
+                                      class="marg5px <%= locals.errors && errors.usuario ? 'is-invalid' : null  %>"
+                                      value="<%= locals.oldData ? oldData.usuario : null %> ">
+                                                <% if (locals.errors && errors.usuario) { %>
+                                                    <div class='text-danger'>
+                                                        <%= errors.usuario.msg %>
+                                                    </div>
+                                                    <% } %>
+                                                    <br>
+                                <label ><b>Nombre Completo:</b></label>
+                                <input 
+                                      type="text" 
+                                      name="fullName"
+                                      class="marg5px <%= locals.errors && errors.fullName ? 'is-invalid' : null  %>"
+                                      value="<%= locals.oldData ? oldData.fullName : null %> ">
+                                                <% if (locals.errors && errors.fullName) { %>
+                                                    <div class='text-danger'>
+                                                      <%= errors.fullName.msg %>
+                                                    </div>
+                                                    <% } %>
                             </div>
-                           <% } %>
 
-                        </div>    
-                        <button class="glow-on-hover"  type="submit">Registrarse</button>
+                            <div class="cincuenta">
+                                <label ><b>Contraseña :</b></label>
+                                <input 
+                                      type="password" 
+                                      name="contraseña"
+                                      class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid' : null  %>"
+                                      value="<%= locals.oldData ? oldData.contraseña : null %> ">
+                                               <% if (locals.errors && errors.contraseña) { %>
+                                                   <div class='text-danger'>
+                                                     <%= errors.contraseña.msg %>
+                                                   </div>
+                                                   <% } %>
+                                            <br>
+                                <label ><b>Repetir Contraseña</b></label>
+                                <input 
+                                      type="password" name="contraseña2"
+                                      class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' : null  %>"
+                                      value="<%= locals.oldData ? oldData.contraseña2 : null %> ">
+                                                <% if (locals.errors && errors.contraseña2) { %>
+                                                    <div class='text-danger'>
+                                                      <%= errors.contraseña2.msg %>
+                                                    </div>
+                                                    <% } %>
+                                <label><b> Imagen de perfil:</b></label>
+                                <input
+                                      class="form-control" 
+                                      type="file" 
+                                      name="avatar">
+                                          <% if (locals.errors && errors.avatar) { %>
+                                           <div class='text-danger'>
+                                           <%= errors.avatar.msg %>
+                                           </div>
+                                           <% } %>
 
-                    </form>
+                                                 <button class="glow-on-hover"
+                                                type="submit">Registrarse</button>
 
-            </article>
+                        </form>
 
-        </section>
+                </article>
 
-        <section id="productos-extra">
-            <h1>Productos Destacados</h1>
+            </section>
 
-            <article>
-                <a href="/productDetail">
+            <section id="productos-extra">
+                <h1>Productos Destacados</h1>
 
-                <div class="taza-individual">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/c4e8235ca027cdc387dea5e64e718a4989708c3a51bcdfd9661e6f3f06879f0479300.jpeg" alt="" class="img-producto">
-                    <i class="fas fa-truck"></i>
-                    <p class="precio">$850</p>
-                    <h4>Taza 01</h4>
-                </div>
-            </a>
-            </article>
-       
-            <article>
-                <div class="taza-individual">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/fd1531139f494abc9c1596c054ef1065936545bfe1c348b644e8dae70d97e7e379300.jpeg" alt="" class="img-producto">
-                    <i class="fas fa-truck"></i>
-                    <p class="precio">$850</p>
-                    <h4>Taza 02</h4>
-                </div>
-            </article>
-            <article>
-                <div class="taza-individual">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/28aa089b98fafa17d0048b5004d20f7aaa9f8847a7d1bca4712546f589597eba79300.jpeg" alt="" class="img-producto">
-                    <i class="fas fa-truck"></i>
-                    <p class="precio">$850</p>
-                    <h4>Taza 02</h4>
-                </div>
-            </article>
-            <article>
-                <div class="taza-individual">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/368766129c6645593098c8d0340d83ade1bcc3592aa82df5026ebb1c84cf0b7279300.jpeg" alt="" class="img-producto">
-                    <i class="fas fa-truck"></i>
-                    <p class="precio">$850</p>
-                    <h4>Taza 02</h4>
-                </div>
-            </article>
-            
-        </section>
-        
-        <section id="barra-extra">
-            <div class="extra">Aceptamos todas las tarjetas</div>
-            <div class="extra">Envíos en el día</div>
-            <div class="extra">Protegemos tus datos</div>
+                <article>
+                    <a href="/productDetail">
 
-        </section>
-        <%- include('./partials/footer.ejs') %>
+                        <div class="taza-individual">
+                            <img src="https://d22fxaf9t8d39k.cloudfront.net/c4e8235ca027cdc387dea5e64e718a4989708c3a51bcdfd9661e6f3f06879f0479300.jpeg"
+                                alt="" class="img-producto">
+                            <i class="fas fa-truck"></i>
+                            <p class="precio">$850</p>
+                            <h4>Taza 01</h4>
+                        </div>
+                    </a>
+                </article>
+
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/fd1531139f494abc9c1596c054ef1065936545bfe1c348b644e8dae70d97e7e379300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/28aa089b98fafa17d0048b5004d20f7aaa9f8847a7d1bca4712546f589597eba79300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+                <article>
+                    <div class="taza-individual">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/368766129c6645593098c8d0340d83ade1bcc3592aa82df5026ebb1c84cf0b7279300.jpeg"
+                            alt="" class="img-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$850</p>
+                        <h4>Taza 02</h4>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="barra-extra">
+                <div class="extra">Aceptamos todas las tarjetas</div>
+                <div class="extra">Envíos en el día</div>
+                <div class="extra">Protegemos tus datos</div>
+
+            </section>
+            <%- include('./partials/footer.ejs') %>
 
     </div>
 </body>

@@ -390,6 +390,9 @@ INICIO SECTION "contenedor section" //LOGIN
     margin-top: 10px;
 
 }
+.text-danger{
+    color: red;
+}
 
 #contenedor-section h2{
     text-align: center;
