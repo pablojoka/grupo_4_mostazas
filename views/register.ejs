@@ -74,10 +74,10 @@
                             </div>
 
                             <div class="cincuenta">
-                                <label ><b>Contraseña :</b></label>
+                                <label ><b>Contraseña:</b></label>
                                 <input 
                                       type="password" 
-                                      name="contraseña"
+                                      name="contraseña" 
                                       class="marg5px <%= locals.errors && errors.contraseña ? 'is-invalid': null  %>"
                                       value="<%= locals.oldData ? oldData.contraseña : null %>">
                                                <% if (locals.errors && errors.contraseña) { %>
@@ -86,9 +86,9 @@
                                                    </div>
                                                    <% } %>
                                             <br>
-                                <label ><b>Repetir Contraseña</b></label>
+                                <label ><b>Repetir Contraseña:</b></label>
                                 <input 
-                                      type="password" name="contraseña2"
+                                      type="password" name="contraseña2" 
                                       class="marg5px <%= locals.errors && errors.contraseña2 ? 'is-invalid' :null%>"
                                       value="<%= locals.oldData ? oldData.contraseña2 : null %>">
                                                 <% if (locals.errors && errors.contraseña2) { %>

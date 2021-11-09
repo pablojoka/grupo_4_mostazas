@@ -1,16 +1,11 @@
 [
  {
   "id": 1,
-  "nombre": "Pepito Cibrian",
-  "email": "pepito@gmail.com",
-  "contraseña": "1234pepito",
-  "avatar": "harold-cara.jpg"
- },
- {
-  "id": 2,
-  "nombre": "Jaime Cibrian",
-  "email": "pepi@gmail.com",
-  "contraseña": "lalala10",
-  "avatar": "bitcoin1.jpg"
+  "email": "vichenzoacostab@gmail.com",
+  "usuario": " vichenzo",
+  "fullName": "pepe pepe",
+  "contraseña": "hola ",
+  "contraseña2": "hola ",
+  "avatar": "1636488393830_img.jpg"
  }
 ]
