@@ -16,5 +16,14 @@
   "contraseña": "$2a$10$ehZ1kn3i4DJtKSXvSZq1Fu7XSHPeBdlo28u4o/U43ixQdwwR5bAG6",
   "contraseña2": false,
   "avatar": "1636547801375_img.jpg"
+ },
+ {
+  "id": 3,
+  "email": "lucas@gmail.com",
+  "usuario": "lucas",
+  "fullName": "lucas gonzales",
+  "contraseña": "$2a$10$DUzVDEme/0CdsnikGmBTEObvncHc8CM/n3Y6dfNxW2einXPxbS.aa",
+  "contraseña2": false,
+  "avatar": "1636584478848_img.jpg"
  }
 ]
