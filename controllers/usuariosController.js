@@ -6,7 +6,9 @@ const User = require('../models/User')
 
 const controller = {
     register: (req,res) => {
+        
         return res.render('register.ejs');
+    
     },
     processRegister:(req, res)=>{
            const resultValidations =  validationResult (req);
@@ -42,6 +44,7 @@ const controller = {
         
     },
     login: (req,res) => {
+        
         return res.render('login');
     },
     loginProcess:(req, res) => {
@@ -52,6 +55,10 @@ const controller = {
             if(isOkThePassword){
                 delete userToLogin.contraseña
                 req.session.userLogged= userToLogin;
+
+                if(req.body.recordar){
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2})
+                }
                 return res.redirect('/usuario/perfil')
          
             } 
@@ -72,11 +79,16 @@ const controller = {
         })
     },
     profile: (req, res) => {
-        
+         
         return res.render('profile',{
             user: req.session.userLogged
         })
     },
+
+    logout:(req,res)=>{
+        req.session.destroy();
+        return res.redirect('/')
+    }
 }
 
 module.exports = controller;
