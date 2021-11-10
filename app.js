@@ -5,6 +5,9 @@
  const {validationResult} = require ('express-validator');
  const multer  = require('multer')
  const session = require('express-session')
+ const cookies = require('cookie-parser')
+
+ const userLoggedMiddleware= require('./middlewares/userLoggedMiddleware')
  /**********express *******/
  const app = express();
  app.use(express.static('public'));
@@ -20,6 +23,12 @@
      resave: false,
      saveUninitialized: false,
  }));
+ app.use(cookies())
+ app.use(userLoggedMiddleware)
+ 
+
+
+ 
  /**********template engine ******/
  app.set('view engine','ejs');
  app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas

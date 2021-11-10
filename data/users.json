@@ -7,5 +7,14 @@
   "contraseña": "$2a$10$am8nOkklfr6HVkSZlfekYOY0JhhH78W5l6RcZZR/D5QPeohI1svKu",
   "contraseña2": false,
   "avatar": "1636519321699_img.jpg"
+ },
+ {
+  "id": 2,
+  "email": "pepito@gmail.com",
+  "usuario": "pepe",
+  "fullName": "pepe pepe",
+  "contraseña": "$2a$10$ehZ1kn3i4DJtKSXvSZq1Fu7XSHPeBdlo28u4o/U43ixQdwwR5bAG6",
+  "contraseña2": false,
+  "avatar": "1636547801375_img.jpg"
  }
 ]

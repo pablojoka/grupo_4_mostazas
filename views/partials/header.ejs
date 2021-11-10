@@ -9,11 +9,17 @@
             </form>
         </div>
         <div id="carrito-login">
+            <% if (locals.isLogged) { %>
             <ul>
                 <li><a href="/login">Ingresar</a></li>
                 <li><a href="/registro">Crear Cuenta</a></li>
                 <li><a href="/carrito">Carrito</a></li>
-
+                <% }else{ %>
+                <img src="/imagenes/avatars/<%= locals.userLogged.avatar %> "width="60" style="border-radius:50%"> 
+                <h4>hi <%= locals.userLogged.usuario %> </h4>
+                <li><a href="/usuario/perfil">Perfil</a></li>
+                <li><a href="/usuario/logout">Cerrar Sesion</a></li>
+                    <% } %> 
             </ul>
         </div>
 
