@@ -4,6 +4,7 @@
  const methodOverride = require('method-override'); //agregue este requerimiento para poder usar el put y el delete a futuro
  const {validationResult} = require ('express-validator');
  const multer  = require('multer')
+ const session = require('express-session')
  /**********express *******/
  const app = express();
  app.use(express.static('public'));
@@ -14,10 +15,11 @@
  app.use(express.json()); // Para poder leer el body
  app.use(methodOverride('_method')); // Para poder usar los métodos PUT y DELETE
  app.use(express.urlencoded({extended: false}));
-     
- 
- 
- 
+ app.use(session({
+     secret: 'es un secreto',
+     resave: false,
+     saveUninitialized: false,
+ }));
  /**********template engine ******/
  app.set('view engine','ejs');
  app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas

@@ -44,8 +44,38 @@ const controller = {
     login: (req,res) => {
         return res.render('login');
     },
+    loginProcess:(req, res) => {
+        let userToLogin = User.findByField('email', req.body.email);
+        
+        if(userToLogin){
+            let isOkThePassword = bcryptjs.compareSync(req.body.contraseña, userToLogin.contraseña)
+            if(isOkThePassword){
+                delete userToLogin.contraseña
+                req.session.userLogged= userToLogin;
+                return res.redirect('/usuario/perfil')
+         
+            } 
+            return res.render('login',{
+                errors:{
+                    email:{
+                        msg:'Las credenciales son invalidas'
+                    }
+                }
+                });
+            }
+        return res.render('login',{
+            errors:{
+                email:{
+                    msg:'No se encuentra este email en nuestra base de datos'
+                }
+            }
+        })
+    },
     profile: (req, res) => {
-        return res.render('userProfile')
+        
+        return res.render('profile',{
+            user: req.session.userLogged
+        })
     },
 }
 

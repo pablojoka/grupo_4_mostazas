@@ -61,5 +61,5 @@ const User={
 
     }
 }
-console.log(User.findAll())
+
 module.exports=User;
