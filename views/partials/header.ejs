@@ -1,7 +1,7 @@
 <header>
     <div id="contenedor-header">
         <div id="divlogo">
-            <a href="/"><img id="logo" src="imagenes/logo.png"  alt=""></a>
+            <a href="/"><img id="logo" src="/imagenes/logo.png"  alt=""></a>
         </div>
         <div id="buscador">
             <form action="">
@@ -10,17 +10,22 @@
         </div>
         <div id="carrito-login">
             <% if (locals.isLogged) { %>
-            <ul>
-                <li><a href="/login">Ingresar</a></li>
-                <li><a href="/registro">Crear Cuenta</a></li>
-                <li><a href="/carrito">Carrito</a></li>
-                <% }else{ %>
-                <img src="/imagenes/avatars/<%= locals.userLogged.avatar %> "width="60" style="border-radius:50%"> 
-                <h4>hi <%= locals.userLogged.usuario %> </h4>
-                <li><a href="/usuario/perfil">Perfil</a></li>
-                <li><a href="/usuario/logout">Cerrar Sesion</a></li>
-                    <% } %> 
-            </ul>
+                <ul>
+                    <li><a href="/login">Ingresar</a></li>
+                    <li><a href="/registro">Crear Cuenta</a></li>
+                    <li><a href="/carrito">Carrito</a></li>
+                    <% }else{ %>
+                        <ul><img src="/imagenes/avatars/<%= locals.userLogged.avatar %> " class="avatar"></ul>
+                        
+                        <ul><h4 style="margin:auto">Bienvenido <%= locals.userLogged.usuario %>
+                        </h4></ul>
+                </ul>
+                <ul>
+                    <li><a href="/usuario/perfil">Perfil</a></li>
+                    <li><a href="/usuario/logout">Cerrar Sesion</a></li>
+                </ul>
+                <% } %>
+                    </ul>
         </div>
 
     </div>

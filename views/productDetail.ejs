@@ -77,9 +77,9 @@
                             <button class="glow-on-hover" type="submit">Finalizar compra
                         </div>
                         <form action="/productos/delete/<%= taza.id %>?_method=DELETE" method="post" style="display: inline-flex;">
-                            <button type="submit" class="boton-delete">Eliminar Producto</button>
+                            <button type="submit" class="boton-edit-delete">Eliminar Producto</button>
                         </form>
-                        <a href="/productos/editar/<%= taza.id %>" class="boton-edicion">editar producto</a>
+                        <button href="/productos/editar/<%= taza.id %>" class="boton-edit-delete">Editar producto</button>
                     </div>
                 </article>
 
