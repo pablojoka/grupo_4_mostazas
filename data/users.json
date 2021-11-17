@@ -25,5 +25,14 @@
   "contraseña": "$2a$10$DUzVDEme/0CdsnikGmBTEObvncHc8CM/n3Y6dfNxW2einXPxbS.aa",
   "contraseña2": false,
   "avatar": "1636584478848_img.jpg"
+ },
+ {
+  "id": 4,
+  "email": "tioputo@gmail.com",
+  "usuario": "tio",
+  "fullName": "burno",
+  "contraseña": "$2a$10$KG.yAR7F31eEk1uJmGgTtucTtdHQ.LocQ9sEu7poyQXp55d8OHwHy",
+  "contraseña2": false,
+  "avatar": "1636601366212_img.jpg"
  }
 ]
