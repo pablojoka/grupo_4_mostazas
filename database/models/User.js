@@ -3,10 +3,9 @@
 //3 buscar a un usuario por su id
 //4 editar la informacion de un usuario 
 //5 eliminar usuario
-
-const { text } = require('express');
+/*const { text } = require('express');
 const fs= require('fs');
-const { all } = require('../routes/usuarios');
+const { all } = require('../../routes/usuarios');
 
 const User={
 
@@ -62,4 +61,43 @@ const User={
     }
 }
 
-module.exports=User;
+module.exports=User;*/
+module.exports = function (sequelize, DataTypes) {
+    let alias = 'usuarios'
+
+    let cols = {
+        id:{
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        fullname:{
+            type: DataTypes.STRING
+        },
+        email:{ 
+            type: DataTypes.STRING
+        },
+        usuario:{
+            type: DataTypes.STRING
+        },
+        avatar :{
+            type: DataTypes.BLOB    
+        }
+
+    }
+    let config ={
+        tableName : "usuarios",
+        timesTamps: false
+    }
+
+    let usuario = sequelize.define( alias, cols, config);
+    
+    usuario.associate = function (models) {
+        usuario.belongsToMany(models.compra,{
+            as: "compra",
+            foreingKey: "id_compra"
+        })
+        
+
+    return usuario
+}}

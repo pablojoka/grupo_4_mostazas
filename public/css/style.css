@@ -150,6 +150,10 @@ nav ul li:hover > ul {
     display: flex;
     flex-wrap: wrap;
 }
+.avatar{
+    width: 50px;
+    height: auto;
+}
 
 /*
 
